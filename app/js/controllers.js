@@ -5,6 +5,7 @@ angular.module('myApp.controllers', [])
 
 .controller('MenuController', ['$scope', '$http', '$log', 'MenuDataLoader',
     function($scope, $http, $log, dataLoader) {
+
         dataLoader.getData().then(function(_data) {
             $scope.data = _data;
             $log.info("Data added to the model", _data);
@@ -51,10 +52,10 @@ angular.module('myApp.controllers', [])
 
             //now make this a list where each ingredient is unique, and add the amounts.
             var uniqueIngredientRefs = [];
-            tool.forEach(allIngredientRefs, function(ingredientRef){
-                if(uniqueIngredientRefs[ingredientRef.ingredient]){
+            tool.forEach(allIngredientRefs, function(ingredientRef) {
+                if (uniqueIngredientRefs[ingredientRef.ingredient]) {
                     uniqueIngredientRefs[ingredientRef.ingredient].amount = uniqueIngredientRefs[ingredientRef.ingredient].amount + ingredientRef.amount;
-                }else{
+                } else {
                     uniqueIngredientRefs[ingredientRef.ingredient] = ingredientRef;
                 }
             });

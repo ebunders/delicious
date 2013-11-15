@@ -1,13 +1,27 @@
 <div class="dinner">
+    <a id="home"></a>
     <h1>Recepten</h1>
     <h3>{{data.menu.name}}</h3>
     <p>Aantal personen:</p>
     <input type="text" ng-model="data.menu.persons"/>
 
+    <div class="contents">
+        <h3>Inhoud</h3>
+        <div class="section" ng-repeat="section in data.menu.sections">
+            <p class="section">{{section.section}}</p>
+            <ol>
+               <li ng-repeat="recipe in section.recipes"><a scroll-to="recipe{{recipe.id}}"> {{recipe.name}} </a></li>
+            </ol>
+        </div>
+    </div>
+
+
     <div class="section" ng-repeat="section in data.menu.sections">
         <h2>{{section.name}}</h2>
         <div class="recipe" ng-repeat="recipe in section.recipes">
+            <a id="recipe{{recipe.id}}"></a>
             <h3>{{recipe.name}}</h3>
+            <a scroll-to="home">inhoud</a>
             <div class="ingredients">
                 <h5>Ingredienten</h5>
                 <div ng-repeat="section in recipe.ingredients">
