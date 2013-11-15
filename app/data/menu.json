@@ -1,6 +1,7 @@
 {
     "ingredients": [
         {"name": "azijn", "category":3, "code": "az"},
+        {"name": "asem", "category":4, "code": "as"},
         {"name": "blok tahoe", "plural":"blokken tahoe", "category":4, "code": "to"},
         {"name": "bloem", "category":3, "code": "bl"},
         {"name": "blikje maiskorrels", "plural":"blikjes maiskorrels", "category":3, "code": "blm"},
@@ -10,6 +11,7 @@
         {"name": "ei", "plural": "eieren", "category":3, "code": "ei", "undevidable":true},
         {"name": "gember", "category":4, "code": "ge"},
         {"name": "goela jawa", "category":4, "code": "gj"},
+        {"name": "groene lombok", "plural": "groene lomboks", "category":1, "code": "log"},
         {"name": "glasnoedels", "category":4, "code": "gln"},
         {"name": "gesnipperde ui",  "category":1,"code": "gui"},
         {"name": "kemiri noot", "plural": "kemiri noten", "category":4, "code": "kn"},
@@ -24,7 +26,7 @@
         {"name": "krenten", "category":3, "code": "kr"},
         {"name": "kruidnagel", "plural":"kruidnagelen", "category":3, "code": "krn"},
         {"name": "ketoembar", "category":4, "code": "ket"},
-        {"name": "lombok", "plural": "lomboks", "category":4, "code": "lo"},
+        {"name": "rode lombok", "plural": "rode lomboks", "category":4, "code": "lor"},
         {"name": "laos wortel", "category":4, "code": "la"},
         {"name": "nootmuskaat", "category":3, "code": "nm"},
         {"name": "petis oedang", "category":4, "code": "po"},
@@ -43,7 +45,9 @@
         {"name": "sperciboontjes","category":1, "code": "sb"},
         {"name": "taogé", "category":1,"code": "tao"},
         {"name": "tomaten", "category":1,"code": "tom"},
+        {"name": "trassi", "category":1,"code": "tr"},
         {"name": "ui", "plural": "uien",  "code": "ui", "category":1},
+        {"name": "vissaus", "code": "vs", "category":4},
         {"name": "witte peper", "category":3, "code": "pw"},
         {"name": "water", "shoppinglist": false, "code": "wa"},
         {"name": "wortel", "plural":"worteltjes", "category":1, "code": "wor"},
@@ -74,7 +78,7 @@
         ],
     "recipes":[
         {
-            "name": "Tofu met Balinese kruiden",
+            "name": "Tahoe boemboe Bali",
             "id":"0",
             "ref": "beb-vuyk:361",
             "persons": 4,
@@ -162,7 +166,7 @@
                         {"amount": 4, "unit": "el", "ingredient": "az"},
                         {"amount": 8, "ingredient": "sj", "note": "gehalveerd"},
                         {"amount": 3, "unit":"tn", "ingredient": "kno", "note": "geperst"},
-                        {"amount": 2, "ingredient": "lo", "note": "ontpit en in reepjes gesneden"},
+                        {"amount": 2, "ingredient": "lor", "note": "ontpit en in reepjes gesneden"},
                         {"amount": 2, "unit": "cm", "ingredient": "ge"},
                         {"amount": 0.5, "unit": "el", "ingredient": "gj"},
                         {"ingredient": "zt"}
@@ -318,6 +322,7 @@
                     "contents": [
                         {"amount":1, "ingredient": "ui", "modifier":"grote", "note":"fijngesneden"},
                         {"amount":250, "unit":"gr", "ingredient": "rgh"},
+                        {"amount":100, "unit":"gr","ingredient": "gln", "note": "geweekt en fijn gesnede"},
                         {"amount":2, "unit":"el", "ingredient": "km"},
                         {"amount":1, "unit":"tl", "ingredient": "nm"},
                         {"amount":100, "unit":"gr", "ingredient": "wor"},
@@ -333,7 +338,70 @@
                 }
             ],
             "description": [
-                "Just do it!"
+                "Kook de eieren. Laat ze schrikken in wat koud water, pel ze en zet opzij.",
+                "Maak het deeg door alle ingredienten tot een soepel geheel te kneden. Laat het deeg rusten onder een vochtige doek terwijl je ondertussen de vulling maakt.",
+                "Week de soe-oen ongeveer 5 minuten in lauw water. Snij dit daarna fijn en zet opzij",
+                "Snij de ui fijn en bak dit  glazig in wat zonnebloemolie.  Voeg het rundergehakt toe en bak totdat het gaar is. Voeg de ketjap toe, de djinten, ketoembar en nootmuskaat.",
+                "Voeg de fijngesneden wortel, prei en doperwten toe. (handje vol)",
+                "Wanneer het geheel gaar is voeg je de fijngesneden soe-oen toe. Proef of er zout en peper bij moet. Laat de vulling afkoelen",
+                "Rol het deeg uit en steek er met een vormpje rondjes uit. Rol dit uit met een deegroller tot een dun deegflapje. Leg een volle eetlepel vulling in het midden. Leg er een stukje ei en een takje selderij op. Maak met een kwastje de rand van het deeg vochtig. Vouw het deeg dicht. Druk de rand goed aan en vouw de rand om.",
+                "Verhit in een wadjang of andere gietijzeren pan, of gewoon de frituur een flinke laag zonnebloemolie. Frituur de pasteitjes hierin totdat ze gaar zijn (het deeg krijgt een mooi krokant uiterlijk met “bubbeltjes”)"
+            ]
+        },
+        {
+            "name": "Sambal Hidjau",
+            "subtitle":"Een milde sambal van groene pepers",
+            "id": "8",
+            "ref": "salemat_makan:6",
+            "persons": 12,
+            "ingredients": [
+                {
+                    "section": "main",
+                    "contents": [
+                        {"amount":6, "ingredient": "log", "modifier": "lange"},
+                        {"amount":0.5, "unit":"tl", "ingredient": "tr"},
+                        {"amount":1, "ingredient": "ui", "note":"gesnipperd"},
+                        {"amount":1, "unit": "tn", "ingredient": "kno", "note": "gesnipperd"},
+                        {"amount":3, "unit":"el", "ingredient": "zo"},
+                        {"amount":15, "unit":"cl", "ingredient": "wa"},
+                        {"ingredient": "as", "note":"stukje ter grootte van een walnoot"},
+                        {"amount":0.5, "unit":"el", "ingredient": "vs"},
+                        {"amount":1, "unit":"tl", "ingredient": "zt"}
+                    ]
+                }
+            ],
+            "description": [
+                "Asem papje: Doe de asem in een beker met twee eetlepels kokend water. Laat even trekken, en daarna goed doorhusslen met een vork, en door een zeef heen drukken met een lepel. Zet het papje apart.",
+                "Snij de groene pepers in de lengte door, en verwijder de zaadlijsten. Was ze uit onder de kraan, en hak ze zeer fijn. Zet ze apart.",
+                "Meng trassi en zout in de vijzel.",
+                "Verhit de olie zacht in een wok of koekenpan, en fruit de ui een paar minuten, tot ze begint te karameliseren.",
+                "Voeg knoflook, trassi en vissaus toe. Laat een minuut pruttelen.",
+                "Voeg de pepers, het water en de tamarinde brij toe, en laat nog even staan pruttelen."
+            ]
+        },
+        {
+            "name": "Sambal Goreng",
+            "id": "9",
+            "ref": "salemat_makan:6",
+            "persons": 8,
+            "ingredients": [
+                {
+                    "section": "main",
+                    "contents": [
+                        {"amount":1, "unit":"tl", "ingredient": "tr"},
+                        {"amount":6,  "ingredient": "sj", "modifier":"kleine", "note":"fijngehakt"},
+                        {"amount":1.5, "unit":"cm", "ingredient": "koe", "note": "fijngehakt"},
+                        {"amount":4,  "ingredient": "lor"},
+                        {"amount":3, "unit":"el", "ingredient": "zo"},
+                        {"amount":1, "unit":"tl", "ingredient": "zt"}
+                    ]
+                }
+            ],
+            "description": [
+                "Snij de rode pepers in de lengte door, en verwijder de zaadlijsten. Was ze uit onder de kraan, en hak ze grof. Zet ze apart.",
+                "Meng trassi en zout in de vijzel.",
+                "Verhit de olie zacht in een wok of koekenpan, en fruit de ui en knoflook een paar minuten, tot de ui begint te karameliseren.",
+                "Voeg koenjit, pepers en trassie toe. Fruit nog even onder regelmatig roeren. Hoe langer je doorbakt, hoe milder de sambal wordt."
             ]
         }
     ],
@@ -347,7 +415,7 @@
             },
             {
                 "name": "bijgerechten",
-                "recipes": ["2", "5", "6"]
+                "recipes": ["2", "5", "6", "8", "9"]
             }
 
         ]

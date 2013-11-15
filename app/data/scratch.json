@@ -8,7 +8,7 @@
                 {
                     "section": "main",
                     "contents": [
-                        {"amount":, "ingredient": ""},
+                        {"amount":, "unit":"", "ingredient": ""},
                     ]
                 },
                 {
