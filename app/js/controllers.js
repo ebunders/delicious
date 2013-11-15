@@ -25,58 +25,63 @@ angular.module('myApp.controllers', [])
         //      - check if the ingredient is in there. if it is, add the amount, if it isn't add it. check if the name should be plural.
 
         var createList = function() {
-            var list = {
-                categories: []
+            var flatList = [],
+                allIngredientRefs = [];
+
+            // create a line with amount, unit and proper name
+            var createIngredientLine = function(ingredientRef) {
+                var ingredient = dataLoader.getIngredient(ingredientRef.ingredient),
+                    result = {};
+                result.unit = ingredientRef.unit ? ingredientRef.unit : (ingredient.unit ? ingredient.unit : "");
+                result.amount = ingredientRef.amount;
+                result.name = (ingredientRef.amount > 1 && ingredient.plural) ? ingredient.plural : ingredient.name;
+                return result.amount + " " + result.unit + " " + result.name;
             };
-            tool.forEach($scope.data.menu.recipes, function(recipe) {
-                tool.forEach(recipe.ingredients, function(section) {
-                    tool.forEach(section.contents, function(ingredient) {
 
-                        //check if this category is in the result yet. If not add it.
-
-                        var ingredientDesc = dataLoader.getIngredient(ingredient.ingredient);
-                        if (ingredientDesc.shoppinglist === undefined || ingredientDesc.shoppinglist === true) {
-
-                            var filterFn = function(_category) {
-                                return ingredientDesc.category === _category.code;
-                            };
-
-                            var cat = tool.find(list.categories, filterFn);
-                            if (!cat) {
-                                cat = angular.copy(dataLoader.getCategory(ingredientDesc.category));
-                                // $log.info(ingredientDesc);
-                                // $log.info(ingredientDesc.category + " yealds ", cat);
-                                cat.ingredients = [];
-                                list.categories.push(cat);
-                            }
-
-                            //now we have the category, see if the ingredient is in the list.
-                            //if not, add it. if so, add the amount, and re-evaluate the name/plural of the ingredient.
-                            filterFn = function(_ingredient) {
-                                return _ingredient.code === ingredient.ingredient;
-                            };
-                            var ingr = tool.find(cat.ingredients, filterFn);
-
-
-                            if (ingr) {
-                                //update the amount, and possibly the name
-                                ingr.amount = ingr.amount + ingredient.amount;
-                            } else {
-                                //create an object for this ingredient in the proper category
-                                ingr = {
-                                    "code": ingredient.ingredient
-                                };
-                                ingr.unit = ingredient.unit ? ingredient.unit : (ingredientDesc.unit ? ingredientDesc.unit : "");
-                                ingr.amount = ingredient.amount;
-                                cat.ingredients.push(ingr);
-                            }
-                            ingr.name = (ingr.amount > 1 && ingredientDesc.plural) ?  ingredientDesc.plural : ingredientDesc.name;
-                        }
+            //first collect all the ingredient refs in all the recipes in the menu
+            tool.forEach($scope.data.menu.sections, function(section) {
+                tool.forEach(section.recipes, function(recipe) {
+                    tool.forEach(recipe.ingredients, function(section) {
+                        tool.forEach(section.contents, function(ingredientRef) {
+                            allIngredientRefs.push(ingredientRef);
+                        });
                     });
                 });
             });
-            $log.info(list);
-            return list;
+
+            //now make this a list where each ingredient is unique, and add the amounts.
+            var uniqueIngredientRefs = [];
+            tool.forEach(allIngredientRefs, function(ingredientRef){
+                if(uniqueIngredientRefs[ingredientRef.ingredient]){
+                    uniqueIngredientRefs[ingredientRef.ingredient].amount = uniqueIngredientRefs[ingredientRef.ingredient].amount + ingredientRef.amount;
+                }else{
+                    uniqueIngredientRefs[ingredientRef.ingredient] = ingredientRef;
+                }
+            });
+
+
+            //for every category: create a list of ingredientrefs that belong to that category
+            tool.forEach($scope.data.categories, function(category) {
+                var categoryIngredients = tool.filter(uniqueIngredientRefs, function(ingredientRef) {
+                    return dataLoader.getIngredient(ingredientRef.ingredient).category === category.code;
+                });
+                if (categoryIngredients.length > 0) {
+                    flatList.push({
+                        "class": "category",
+                        "text": category.name
+                    });
+                    tool.forEach(categoryIngredients, function(ingredientRef) {
+                        flatList.push({
+                            "class": "ingredient",
+                            "text": createIngredientLine(ingredientRef)
+                        });
+                    });
+                }
+            });
+
+
+            $log.info(flatList);
+            return flatList;
         };
 
         dataLoader.getData().then(function(_data) {

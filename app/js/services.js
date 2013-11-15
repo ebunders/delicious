@@ -17,21 +17,22 @@ angular.module('myApp.services', [])
         }
 
 
+        /*
+         * This function replaces all the recipe refs in the menu section of the data
+         * with the actual recipes.
+         */
         function fetchRecipes() {
-            var recipes = [];
-            tool.forEach(data.menu.recipes, function(recipeId) {
-                tool.addWhenContent(recipes, tool.find(data.recipes, function(recipe) {
-                    return recipe.id === recipeId;
-                }));
+            tool.forEach(data.menu.sections, function(section) {
+                section.recipes = tool.map(section.recipes, function(id) {
+                    return fetchRecipe(id);
+                });
             });
-            data.menu.recipes = recipes;
         }
 
-        function fetchRecipe(ref) {
-            for (var i = 0; i < data.recipes.length; i++) {
-                var recipe = data.recipes[i];
-                if (recipe.ref === ref) return recipe;
-            }
+        function fetchRecipe(id) {
+            return tool.find(data.recipes, function(recipe) {
+                return recipe.id === id;
+            });
         }
 
         return {
@@ -60,6 +61,8 @@ angular.module('myApp.services', [])
     }
 ])
 
+
+
 .factory('Tool', ["$log",
     function($log) {
         "use strict";
@@ -67,17 +70,36 @@ angular.module('myApp.services', [])
         var tool = {};
 
         /*
-        * Executes the function for each element in the array.
-        */
+         * Executes the function for each element in the array.
+         */
         tool.forEach = function(array, func) {
-            for (var i = 0; i < array.length; i++) {
-                func(array[i], i);
+            var i;
+            if (array.length) {
+                for (i = 0; i < array.length; i++) {
+                    func(array[i], i);
+                }
+            } else {
+                for (i in array) {
+                    func(array[i], i);
+                }
             }
         };
 
         /*
-        * Returns the first object in the array for which the function returns true.
-        */
+         * This function maps an array to another array. The function is called on each element of input array.
+         * And a new array is built with the output result.
+         */
+        tool.map = function(inputArray, func) {
+            var result = [];
+            this.forEach(inputArray, function(element) {
+                result.push(func(element));
+            });
+            return result;
+        };
+
+        /*
+         * Returns the first object in the array for which the function returns true.
+         */
         tool.find = function(array, func) {
             for (var i = 0; i < array.length; i++) {
                 if (func(array[i], i)) return array[i];
@@ -86,10 +108,41 @@ angular.module('myApp.services', [])
         };
 
         /*
-        * Adds the object to the array, when it is truthy
-        */
+         * Creates a new array with all objects of inputArray for which func returns 'true'
+         */
+        tool.filter = function(inputArray, func) {
+            var result = [];
+            this.forEach(inputArray, function(element) {
+                if (true === func(element)) {
+                    result.push(element);
+                }
+            });
+            return result;
+        };
+
+        /*
+         * Adds the object to the array, when it is not null and not undefined.
+         */
         tool.addWhenContent = function(array, value) {
-            if (value) array.push(value);
+            if (value !== null && value !== undefined) array.push(value);
+        };
+
+
+        /*
+         * creates a new array that contains only unique objects from the input array
+         * what is unique? The hashFn should create a identifying string for the object
+         */
+        tool.asSet = function(inputArray, hashFn) {
+            var result = [],
+                set = [];
+            this.forEach(inputArray, function(element) {
+                var hash = hashFn(element);
+                if (!set[hash]) {
+                    result.push(element);
+                    set[hash] = true;
+                }
+            });
+            return result;
         };
 
         return tool;

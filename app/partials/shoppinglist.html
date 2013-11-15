@@ -1,10 +1,9 @@
-<h1>Boodschappenlijst</h1>
-<h3>{{data.menu.name}}</h3>
-<p>Voor {{data.menu.persons}} personen</p>
-<br>
-<div ng-repeat="category in list.categories">
-    <h4>{{category.name}}</h4>
-    <ul>
-        <li ng-repeat="ingredient in category.ingredients">{{ingredient.amount}} {{ingredient.unit}} {{ingredient.name}}</li>
-    </ul>
+<div class="shoppinglist"
+    <h1>Boodschappenlijst</h1>
+    <h3>{{data.menu.name}}</h3>
+    <p>Voor {{data.menu.persons}} personen</p>
+    <br>
+    <div class="ingredients">
+        <p ng-repeat="item in list" class="{{item.class}}">{{item.text}}</p>
+    </div>
 </div>

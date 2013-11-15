@@ -4,19 +4,23 @@
 angular.module('myApp.filters', [])
 
 
-.filter("readableIngredient", ['$log',
-    function($log) {
+.filter("readableIngredient", ['$log', '$filter', 'MenuDataLoader',
+    function($log, $filter, dataLoader) {
     'use strict';
-        return function(ingredient, recipe, data) {
+        return function(ingredientRef, recipe, data) {
             var persons = data.menu.persons;
             var recipePersons = recipe.persons;
             var ratio = persons / recipePersons;
+            var ingredient = dataLoader.getIngredient(ingredientRef.ingredient);
 
-            var amount = ingredient.amount * ratio || "";
-            var unit = resolveUnit(ingredient, ratio, data);
-            var ingredientName = resolveIngredientName(ingredient, ratio, data);
-            var modifier = ingredient.modifier;
-            var note = ingredient.note;
+            var amount = ingredientRef.amount * ratio || "";
+            if(amount % 1 > 0){
+                amount = ingredient.undevidable  ? $filter("number")(amount, 0) : $filter("number")(amount, 2);
+            }
+            var unit = resolveUnit(ingredientRef, ratio, data);
+            var ingredientName = resolveIngredientName(ingredientRef, ratio, data);
+            var modifier = ingredientRef.modifier;
+            var note = ingredientRef.note;
             return  amount  + " " + unit + " " + (modifier ? modifier + " " : "") + ingredientName + (note ? " (" + note + ")" : "");
         };
 
@@ -41,7 +45,8 @@ angular.module('myApp.filters', [])
         }
 
         function resolveIngredientName(ingredientRef, ratio, data){
-            var ingredient = resolveIngredient(ingredientRef.ingredient, data);
+            // var ingredient = resolveIngredient(ingredientRef.ingredient, data);
+            var ingredient = dataLoader.getIngredient(ingredientRef.ingredient);
             if(ingredient){
                 if((ingredientRef.amount * ratio) > 1 && ingredient.plural){
                     return ingredient.plural;

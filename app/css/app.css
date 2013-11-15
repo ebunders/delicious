@@ -31,7 +31,22 @@
 
 
 .dinner p {margin: 2px ; }
-.dinner .ingredients, .dinner .descriptions {font-weight: bold; text-decoration: underline;}
+.dinner .ingredients h5, .dinner .description h5 {font-weight: bold; text-decoration: underline;}
 .dinner .section {padding-top: 4px; font-style: italic; font-size: 1.2em;}
-.dinner .ingredient {padding-left: 4px;}
-.dinner h3 {padding-top: 30px;}
+.dinner .section h2 {text-align: center; font-style: italic;}
+.dinner .ingredients .ingredient {padding-left: 4px;}
+.dinner .recipe h3 {width: 100%; background-color: #EDEDED;}
+/*.dinner .recipe {border: 1px solid grey;}*/
+.dinner .recipe .ingredients,  .dinner .recipe .description{ float: left; padding: 0 15px;}
+.dinner .recipe .description{width: 50%;}
+.dinner .recipe {clear: both; overflow: hidden}
+
+.shoppinglist .ingredients{
+  -moz-column-count:2; /* Firefox */
+  -webkit-column-count:2; /* Safari and Chrome */
+  -ms-column-count:2; /* Safari and Chrome */
+  column-count:2;
+}
+
+.shoppinglist .ingredients .category{font-weight: bold; text-decoration: underline;}
+.shoppinglist .ingredients .ingredient{margin: 0 0 2px 4px;}
