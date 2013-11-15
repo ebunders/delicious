@@ -390,6 +390,7 @@
                     "contents": [
                         {"amount":1, "unit":"tl", "ingredient": "tr"},
                         {"amount":6,  "ingredient": "sj", "modifier":"kleine", "note":"fijngehakt"},
+                        {"amount":5, "unit": "tn", "ingredient": "kno", "note": "gesnipperd"},
                         {"amount":1.5, "unit":"cm", "ingredient": "koe", "note": "fijngehakt"},
                         {"amount":4,  "ingredient": "lor"},
                         {"amount":3, "unit":"el", "ingredient": "zo"},
@@ -401,7 +402,7 @@
                 "Snij de rode pepers in de lengte door, en verwijder de zaadlijsten. Was ze uit onder de kraan, en hak ze grof. Zet ze apart.",
                 "Meng trassi en zout in de vijzel.",
                 "Verhit de olie zacht in een wok of koekenpan, en fruit de ui en knoflook een paar minuten, tot de ui begint te karameliseren.",
-                "Voeg koenjit, pepers en trassie toe. Fruit nog even onder regelmatig roeren. Hoe langer je doorbakt, hoe milder de sambal wordt."
+                "Voeg koenjit, lomboks en trassie toe. Fruit nog even onder regelmatig roeren. Hoe langer je doorbakt, hoe milder de sambal wordt."
             ]
         }
     ],
