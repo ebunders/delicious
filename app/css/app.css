@@ -1,0 +1,37 @@
+/* app css stylesheet */
+
+.menu {
+  list-style: none;
+  border-bottom: 0.1em solid black;
+  margin-bottom: 2em;
+  padding: 0 0 0.5em;
+}
+
+.menu:before {
+  content: "[";
+}
+
+.menu:after {
+  content: "]";
+}
+
+.menu > li {
+  display: inline;
+}
+
+.menu > li:before {
+  content: "|";
+  padding-right: 0.3em;
+}
+
+.menu > li:nth-child(1):before {
+  content: "";
+  padding: 0;
+}
+
+
+.dinner p {margin: 2px ; }
+.dinner .ingredients, .dinner .descriptions {font-weight: bold; text-decoration: underline;}
+.dinner .section {padding-top: 4px; font-style: italic; font-size: 1.2em;}
+.dinner .ingredient {padding-left: 4px;}
+.dinner h3 {padding-top: 30px;}

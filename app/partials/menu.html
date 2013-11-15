@@ -1,0 +1,21 @@
+<div class="dinner">
+    <h1>Recepten</h1>
+    <h3>{{data.menu.name}}</h3>
+    <p>Aantal personen:</p>
+    <input type="text" ng-model="data.menu.persons"/>
+    <div class="recipe" ng-repeat="recipe in data.menu.recipes">
+        <h3>{{recipe.name}}</h3>
+        <p class="ingredients">Ingredienten</p>
+        <div ng-repeat="section in recipe.ingredients">
+            <p class="section" ng-hide="section.section == 'main'">{{section.section}}</p>
+            <p class="ingredient" ng-repeat="ingredient in section.contents">{{ingredient | readableIngredient:recipe:data}}</p>
+        </div>
+        <div class="description" >
+            <p class="descriptions">Uitleg</p>
+            <ul>
+                <li ng-repeat="description in recipe.description">{{description}}</li>
+            </ul>
+        </div>
+        <hr/>
+    </div>
+</div>

@@ -1,0 +1,44 @@
+// template receipe
+        {
+            "name": "",
+            "id": "",
+            "ref": "",
+            "persons": ,
+            "ingredients": [
+                {
+                    "section": "main",
+                    "contents": [
+                        {"amount":, "ingredient": ""},
+                    ]
+                },
+                {
+                    "section": "kruiden pasta",
+                    "contents": [
+                        {"amount":2, "unit": "tn", "ingredient": "kno", "modifier": "gesnipperde"},
+                        {"amount":, "unit": "", "ingredient": ""},
+
+                    ]
+                }
+            ],
+            "description": [
+                "",
+            ]
+        }
+
+//data for shoppinglist:
+{
+    "categories": [
+        {
+            "name": "Groente en fruit",
+            "code": 1,
+            "ingredients": [
+                {
+                    "code":1,
+                    "name" : "name/plural",
+                    "amount" : 6,
+                    "unit": "tl"
+                }
+            ]
+        }
+    ]
+}

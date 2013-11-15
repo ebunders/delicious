@@ -1,0 +1,344 @@
+{
+    "ingredients": [
+        {"name": "azijn", "category":3, "code": "az"},
+        {"name": "blok tahoe", "plural":"blokken tahoe", "category":4, "code": "to"},
+        {"name": "bloem", "category":3, "code": "bl"},
+        {"name": "blikje maiskorrels", "plural":"blikjes maiskorrels", "category":3, "code": "blm"},
+        {"name": "citroen", "category":1, "code": "ci"},
+        {"name": "djinten", "category":4, "code": "dji"},
+        {"name": "doperwten", "category":1, "code": "dop"},
+        {"name": "ei", "plural": "eieren", "category":3, "code": "ei"},
+        {"name": "gember", "category":4, "code": "ge"},
+        {"name": "goela jawa", "category":4, "code": "gj"},
+        {"name": "glasnoedels", "category":4, "code": "gln"},
+        {"name": "gesnipperde ui",  "category":1,"code": "gui"},
+        {"name": "kemiri noot", "plural": "kemiri noten", "category":4, "code": "kn"},
+        {"name": "kip", "category":2, "code": "ki"},
+        {"name": "kip fillet", "category":2, "code": "kif"},
+        {"name": "komkommer", "plural": "komkommers", "category":1, "code": "kom"},
+        {"name": "koenjit", "category":4, "code": "koe"},
+        {"name": "knoflook", "unit":"bol", "category":1, "code": "kno"},
+        {"name": "kool", "plural": "kolen", "category":1, "code": "ko"},
+        {"name": "koriander", "category":3, "code": "kor"},
+        {"name": "ketjap manis", "category":4, "code": "km"},
+        {"name": "krenten", "category":3, "code": "kr"},
+        {"name": "kruidnagel", "plural":"kruidnagelen", "category":3, "code": "krn"},
+        {"name": "ketoembar", "category":4, "code": "ket"},
+        {"name": "lombok", "plural": "lomboks", "category":4, "code": "lo"},
+        {"name": "laos wortel", "category":4, "code": "la"},
+        {"name": "nootmuskaat", "category":3, "code": "nm"},
+        {"name": "petis oedang", "category":4, "code": "po"},
+        {"name": "pijpkaneel", "category":3, "code": "pk"},
+        {"name": "prij", "category":1, "code": "pr"},
+        {"name": "rode wijn", "category":3, "code": "rw"},
+        {"name": "rundergehakt", "category":2, "code": "rgh"},
+        {"name": "sambal oelek", "category":4, "code": "saoe"},
+        {"name": "salam blad", "plural": "salam bladeren", "category":4, "code": "sbl"},
+        {"name": "sambal trassi", "category":4, "code": "satr"},
+        {"name": "santen", "unit":"blok", "category":4, "code": "sa"},
+        {"name": "sereh", "unit":"spriet", "category":4, "code": "se"},
+        {"name": "selderie", "category":1, "code": "sel"},
+        {"name": "slaolie", "category":3, "code": "so"},
+        {"name": "sjalot", "plural": "sjalotten", "category":1, "code": "sj"},
+        {"name": "sperciboontjes","category":1, "code": "sb"},
+        {"name": "taogé", "category":1,"code": "tao"},
+        {"name": "tomaten", "category":1,"code": "tom"},
+        {"name": "ui", "plural": "uien",  "code": "ui", "category":1},
+        {"name": "witte peper", "category":3, "code": "pw"},
+        {"name": "water", "shoppinglist": false, "code": "wa"},
+        {"name": "wortel", "plural":"worteltjes", "category":1, "code": "wor"},
+        {"name": "zout", "category":3, "code": "zt"},
+        {"name": "zonnebloem olie", "category":3, "code": "zo"},
+        {"name": "zwarte peper", "category":3, "code": "pz"}
+    ],
+    "units": [
+        {"name": "mm",  "code": "ml"},
+        {"name": "dl",  "code": "dl"},
+        {"name": "l",  "code": "l"},
+        {"name": "liter",  "code": "l"},
+        {"name": "teen", "plural": "tenen", "code": "tn"},
+        {"name": "theelepel", "plural":"theelepels",  "code": "tl"},
+        {"name": "eetlepel", "plural":"eetlepels",  "code": "el"},
+        {"name": "unit",  "code": "u"},
+        {"name": "cm",  "code": "cm"},
+        {"name": "cl",  "code": "cl"},
+        {"name": "kilo",  "code": "kg"},
+        {"name": "gram",  "code": "gr"},
+        {"name": "mespuntje",  "code": "mp"}
+    ],
+    "categories":[
+            {"name": "Groente en fruit", "code": 1},
+            {"name": "Vlees en vis", "code": 2},
+            {"name": "Overigen", "code": 3},
+            {"name": "Toko", "code": 4}
+        ],
+    "recipes":[
+        {
+            "name": "Tofu met Balinese kruiden",
+            "ref": "beb-vuyk:361",
+            "persons": 4,
+            "ingredients":[
+                {
+                    "section": "main",
+                    "contents": [
+                        {"amount": 1 , "ingredient": "to"},
+                        {"amount": 0.16 , "ingredient": "sa"},
+                        {"amount": 2 , "unit": "dl", "ingredient": "wa"},
+                        {"amount": 1 , "unit": "dl", "ingredient": "zo"}
+                    ]
+                },
+                {
+                    "section": "kruiden pasta",
+                    "contents": [
+                        {"amount": 3 , "ingredient": "gui", "unit": "el"},
+                        {"amount": 2 , "unit": "tn", "ingredient": "kno", "modifier": "gesnipperde"},
+                        {"amount": 2 , "unit": "tl", "ingredient": "saoe"},
+                        {"amount": 5 ,  "ingredient": "kn", "modifier": "gepofte"},
+                        {"amount": 1 , "unit": "cm", "ingredient": "koe"},
+                        {"amount": 1 , "unit": "cm", "ingredient": "ge"},
+                        {"amount": 2 , "unit": "tl", "ingredient": "gj"},
+                        {"amount": 1 , "unit": "el", "ingredient": "km"}
+                    ]
+                }
+            ],
+            "description": [
+                "Snij de tofu in dobbelstenen, druk er zoveel mogelijk vocht uit met een theedoek. Laat de olie goed heet worden en bak de tofu goudkleurig. Zet apart in een vergiet.",
+                "Wrijf de ingredienten voor de kruidenpasta in de vijzel met een scheutje olie tot een brij. fruit deze voorzichtig in het restant olie. Voeg hier het water, de ketjap en de santen bij.",
+                "Voeg de uitgelekte tahoe toe, en laat het gerecht een tijdje smoren tot de sous begint in te dikken."
+            ]
+        },
+        {
+            "name": "Eieren met petis",
+            "id":"1",
+            "ref": "beb-vuyk:320",
+            "persons": 4,
+            "ingredients": [
+                {
+                    "section": "main",
+                    "contents": [
+                        {"amount": 4 , "ingredient": "ei"},
+                        {"amount": 0.5 , "ingredient": "wa", "unit": "l"},
+                        {"amount": 0.16 , "ingredient": "sa"},
+                        {"amount": 2 , "ingredient": "zo", "unit": "el"},
+                        {"amount": 1,  "ingredient": "se"},
+                        {"amount": 2,  "ingredient": "sb"},
+                        {"amount": 0.5, "modifier": "sap van", "ingredient": "ci"}
+                    ]
+                },
+                {
+                    "section": "kruiden pasta",
+                    "contents": [
+                        {"amount": 2 , "ingredient": "gui", "unit": "el"},
+                        {"amount": 2 , "unit": "tn", "ingredient": "kno", "modifier": "gesnipperde"},
+                        {"amount": 1 , "unit": "tl", "ingredient": "satr"},
+                        {"amount": 1, "unit": "cm", "ingredient": "la"},
+                        {"amount": 2, "ingredient": "sbl"},
+                        {"amount": 1, "unit": "tl", "ingredient": "gj"},
+                        {"amount": 1, "unit": "tl", "ingredient": "po"}
+
+                    ]
+                }
+            ],
+            "description": [
+                "Kook eieren vier minuten en pel ze. Prik er met een sate prikker van alle kanten doorheen, zodat de sous er goed in kan trekken.",
+                "Wrijf de ingredienten voor de kruiden pasta samen, en fruit het tot het de uitjes karameliseren.",
+                "Voeg santen en water toe, en ook de de sereh en de salam bladeren. Voeg ook de eieren toe. Breng aan de kook.",
+                "Stoof dit ongeveer 20 minuten zachtjes, tot de sous begint in te dikken. Voeg op het laatst de citroen sap nog toe."
+            ]
+        },
+        {
+            "name": "Atjar Timor",
+            "ref": "beb-vuyk:417",
+            "id":"2",
+            "persons": 4,
+            "ingredients": [
+                {
+                    "section": "main",
+                    "contents": [
+                        {"amount": 0.5 , "ingredient": "kom", "note": "ontpit en in stukken gesneden"},
+                        {"amount": 100, "unit": "gr"  , "ingredient": "tao"},
+                        {"amount": 100, "unit": "gr", "ingredient": "ko", "note": "bij voorbaat spitskool"},
+                        {"amount": 4, "unit": "el", "ingredient": "az"},
+                        {"amount": 8, "ingredient": "sj", "note": "gehalveerd"},
+                        {"amount": 3, "unit":"tn", "ingredient": "kno", "note": "geperst"},
+                        {"amount": 2, "ingredient": "lo", "note": "ontpit en in reepjes gesneden"},
+                        {"amount": 2, "unit": "cm", "ingredient": "ge"},
+                        {"amount": 0.5, "unit": "el", "ingredient": "gj"},
+                        {"ingredient": "zt"}
+                    ]
+                }
+            ],
+            "description": [
+                "Kook de azijn met de suiker, het knoflook sap en het zout, en stroor er de gehakte gember doorheen",
+                "Maak de groente schoon, laat ze uitlekken.",
+                "Kook de komkommer en de kool vijf minuten mee. Voeg dan de lomboks toe.",
+                "Roer er als laatste de taogé doorheen en laat het nog een minuutje koken."
+            ]
+        },
+        {
+            "name": "Kip met krenten",
+            "ref": "beb-vuyk:272",
+            "id":"3",
+            "persons": 4,
+            "ingredients": [
+                {
+                    "section": "main",
+                    "contents": [
+                        {"amount":800, "unit": "gr"  , "ingredient": "ki"},
+                        {"amount":4, "unit":"el", "ingredient": "kr", "note":"gewassen"},
+                        {"amount":3, "unit":"el", "ingredient": "bl"},
+                        {"amount":4, "unit":"el", "ingredient": "zo"},
+                        {"amount":3, "ingredient": "krn"},
+                        {"amount":3, "unit":"cm", "ingredient": "pk"},
+                        {"amount":1, "unit":"dl", "ingredient": "rw"},
+                        {"amount":0.5, "ingredient": "ci", "note":"het sap van"},
+                        { "ingredient": "pz"},
+                        { "ingredient": "zt"}
+                    ]
+                }
+            ],
+            "description": [
+                "Snij de kip in stukken en wrijf haar in met peper en zout. Braad de stukken op in de olie tot ze er goudbruin uit ziet, voeg dan een scheut water toe en maak haar af met de wijn en het citroen sap.",
+                "Voeg de krenten, kruidnagel en de kaneel toe, en stoof de kip gaar.",
+                "Maak de bloem lichtbruin door haar droog te bakken in een koekepan met dikke bodem. Maak het aan met enkele eetlepels water en bind hiermee de sous."
+            ]
+        },
+        {
+            "name": "Sambal goreng Boontjes",
+            "id":"4",
+            "ref": "beb-vuyk:41",
+            "persons": 4,
+            "ingredients": [
+                {
+                    "section": "main",
+                    "contents": [
+                        {"amount":0.25, "unit":"kg", "ingredient": "sb"},
+                        {"amount":1, "ingredient": "se"},
+                        {"amount":1, "ingredient": "sbl"},
+                        {"amount":0.16, "ingredient": "sa"},
+                        {"amount":2, "unit":"el", "ingredient": "zo"}
+                    ]
+                },
+                {
+                    "section": "kruiden pasta",
+                    "contents": [
+                        {"amount":3, "unit": "el", "ingredient": "gui"},
+                        {"amount":1, "unit": "tn", "ingredient": "kno", "modifier": "gesnipperde"},
+                        {"amount":1, "unit": "cm", "ingredient": "la"},
+                        {"amount":1.5, "unit": "tl", "ingredient": "satr"},
+                        {"amount":1, "unit": "tl", "ingredient": "gj"},
+                        {"ingredient": "zt"}
+                    ]
+                }
+            ],
+            "description": [
+                "Maak de boontjes schoon en halveer ze. Kook ze een paar minuten tot ze niet meer helemaal hard zijn. Giet ze af.",
+                "Wrijf de ingredienten voor de kruidenpasta in de vijzel met een scheutje olie tot een brij. fruit deze voorzichtig in het restant olie.",
+                "voeg de boontjes toe, en zet het vuur hoog. Bak het geheel een tijdje, blijf roeren om te zorgen dat het niet aanbrand.",
+                "voeg een scheut water toe, en zet het vuur laag als het kookt. Voeg santen, sereh en salam blad toe. Laat ongeveer vijftien minuten pruttelen."
+            ]
+        },
+        {
+            "name": "Maiskoekjes",
+            "id": "5",
+            "ref": "beb-vuyk:388",
+            "persons":4  ,
+            "ingredients": [
+                {
+                    "section": "main",
+                    "contents": [
+                        {"amount":0.5  , "ingredient": "blm"},
+                        {"amount":2.5, "unit":"el", "ingredient": "bl"},
+                        {"amount":1, "ingredient": "ei"},
+                        {"amount":1, "unit":"el", "ingredient": "pr", "note": "fijngehakt"},
+                        {"amount":1, "unit":"el", "ingredient": "sel", "note": "fijngehakt"},
+                        {"ingredient": "zo", "note": "om in te bakken"}
+                    ]
+                },
+                {
+                    "section": "kruiden pasta",
+                    "contents": [
+                        {"amount":1, "unit": "el", "ingredient": "gui"},
+                        {"amount":1, "unit": "tn", "ingredient": "kno", "note": "gesnipperd"},
+                        {"amount":2,  "ingredient": "kn", "note": "gepoft en fijn gemalen"},
+                        {"ingredient": "sa"},
+                        {"ingredient": "pz"}
+                    ]
+                }
+            ],
+            "description": [
+                "Wrijf de kruiden samen tot een brij.",
+                "Klop de eieren los, meng hierdoor de mais, het kruidenmengsel, de prij, de selderie en de bloem. Voeg als het nog niet goed plakt wat extra bloem toe.",
+                "Maak de olie heet, en bak in porties koekjes van het beslag."
+            ]
+        },
+        {
+            "name": "Lalab van tomaat",
+            "id": "6",
+            "ref": "beb-vuyk:442",
+            "persons": 4,
+            "ingredients": [
+                {
+                    "section": "main",
+                    "contents": [
+                        {"amount":2, "ingredient": "tom", "modifier": "grote"},
+                        {"amount":1, "unit":"tl", "ingredient": "satr"},
+                        {"amount":1, "unit":"el", "ingredient": "km"},
+                        {"amount":1, "unit": "tn", "ingredient": "kno", "note": "sap van"},
+                        {"amount":0.5, "ingredient": "ci", "note": "sap van"},
+                        {"amount":1, "unit":"tl", "ingredient": "so"}
+                    ]
+                }
+            ],
+            "description": [
+                "Dompel de tomaten een minuut in kokend water. Trek de schil eraf en snij ze in dikke plakken.",
+                "Meng sambal, ketjap, knoflook en citroensap met de olie tot een sous.",
+                "Giet dit sousje kort voor het opdienen over de tomaat."
+            ]
+        },
+        {
+            "name": "Pastel goreng",
+            "id": "7",
+            "ref": "http://www.dekokendeboekverkoper.nl/pastel-goreng/",
+            "persons": 10,
+            "ingredients": [
+                {
+                    "section": "Het deeg",
+                    "contents": [
+                        {"amount":500, "unit":"gr", "ingredient": "bl"},
+                        {"amount":125, "unit":"ml", "ingredient": "wa"},
+                        {"amount":1, "unit":"mp", "ingredient": "zt"},
+                        {"amount":1, "ingredient": "ei"},
+                        {"amount":1, "unit":"el", "ingredient": "zo"}
+                    ]
+                },
+                {
+                    "section": "de vulling",
+                    "contents": [
+                        {"amount":1, "ingredient": "ui", "modifier":"grote", "note":"fijngesneden"},
+                        {"amount":250, "unit":"gr", "ingredient": "rgh"},
+                        {"amount":2, "unit":"el", "ingredient": "km"},
+                        {"amount":1, "unit":"tl", "ingredient": "nm"},
+                        {"amount":100, "unit":"gr", "ingredient": "wor"},
+                        {"amount":100, "unit":"gr", "ingredient": "dop"},
+                        {"amount":2, "unit":"tl", "ingredient": "ket"},
+                        {"amount":1, "unit":"tl", "ingredient": "dji"},
+                        { "ingredient": "zt", "note":"naar smaak"},
+                        { "ingredient": "pz", "note":"naar smaak"},
+                        {"amount":3, "ingredient": "ei", "note":"gekookt"},
+                        {"amount":3, "unit":"el", "ingredient": "kor"}
+
+                    ]
+                }
+            ],
+            "description": [
+                "Just do it!"
+            ]
+        }
+    ],
+    "menu":{
+        "persons": 12,
+        "name": "Indonesische kookworkshop 22 november 20113",
+        "recipes": ["1", "2", "3", "4", "5"]
+    }
+}

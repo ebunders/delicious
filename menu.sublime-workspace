@@ -1,0 +1,1894 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"fun",
+				"function"
+			],
+			[
+				"data",
+				"dataLoader"
+			],
+			[
+				"ingred",
+				"ingredient"
+			],
+			[
+				"fi",
+				"filterFn"
+			],
+			[
+				"func",
+				"function"
+			],
+			[
+				"ing",
+				"ingredient"
+			],
+			[
+				"Da",
+				"dataLoader"
+			],
+			[
+				"rec",
+				"receipe"
+			],
+			[
+				"ingredie",
+				"ingredients"
+			],
+			[
+				"cat",
+				"categories"
+			],
+			[
+				"for",
+				"for	for (…) {…}"
+			],
+			[
+				"tao",
+				"taogé"
+			],
+			[
+				"be",
+				"beb-vuyk"
+			],
+			[
+				"in",
+				"ingredient"
+			],
+			[
+				"reci",
+				"receipe"
+			],
+			[
+				"re",
+				"receipRef"
+			],
+			[
+				"teas",
+				"teaserCounter"
+			],
+			[
+				"pack",
+				"packTeaser_settings"
+			],
+			[
+				"encoS",
+				"encodedSubs"
+			],
+			[
+				"up",
+				"updateDesktopLink"
+			],
+			[
+				"encode",
+				"encodeSubscriptions"
+			],
+			[
+				"Pack",
+				"PacksDesktopLinksService"
+			],
+			[
+				"enS",
+				"encodedSubs"
+			],
+			[
+				"enc",
+				"encodeSubscriptions"
+			],
+			[
+				"val",
+				"valueWhenEmpty"
+			],
+			[
+				"callmeb",
+				"callmebackteaser"
+			],
+			[
+				"bcom",
+				"bcom_settings"
+			],
+			[
+				"cam",
+				"campaignId"
+			],
+			[
+				"prod",
+				"product_link"
+			],
+			[
+				"subs",
+				"subscriptions"
+			],
+			[
+				"use",
+				"uselected"
+			],
+			[
+				"product",
+				"product_link"
+			],
+			[
+				"produ",
+				"product_link"
+			],
+			[
+				"rende",
+				"rendered"
+			],
+			[
+				"set",
+				"set_local_selection"
+			],
+			[
+				"b",
+				"bcom_settings"
+			],
+			[
+				"cop",
+				"copier"
+			],
+			[
+				"proF",
+				"propertyFilter"
+			],
+			[
+				"proTM",
+				"propertyTransformMap"
+			],
+			[
+				"ty",
+				"types"
+			],
+			[
+				"proT",
+				"propTrasformMap"
+			],
+			[
+				"pa",
+				"packs_settings"
+			],
+			[
+				"or",
+				"orderPage_url"
+			],
+			[
+				"du",
+				"dummyService"
+			],
+			[
+				"ex",
+				"extractErrorMessage"
+			],
+			[
+				"res",
+				"result"
+			],
+			[
+				"succ",
+				"successData"
+			],
+			[
+				"resp",
+				"responseData"
+			],
+			[
+				"prot",
+				"prototype"
+			],
+			[
+				"def",
+				"deferred"
+			],
+			[
+				"sen",
+				"sendRequestError"
+			],
+			[
+				"call",
+				"callMeBackService"
+			],
+			[
+				"cal",
+				"CallMeBackService"
+			],
+			[
+				"dy",
+				"dummyService"
+			],
+			[
+				"phone",
+				"phoneNumber"
+			],
+			[
+				"pro",
+				"productRepository"
+			],
+			[
+				"rep",
+				"replacers"
+			],
+			[
+				"add",
+				"addThing"
+			],
+			[
+				"Te",
+				"TextReplaceService"
+			],
+			[
+				"tex",
+				"textReplaceService"
+			],
+			[
+				"ch",
+				"chosen_product"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "app/data/menu.json",
+			"settings":
+			{
+				"buffer_size": 15213,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/data/scratch.json",
+			"settings":
+			{
+				"buffer_size": 1096,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/js/controllers.js",
+			"settings":
+			{
+				"buffer_size": 3628,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/js/services.js",
+			"settings":
+			{
+				"buffer_size": 2201,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/js/app.js",
+			"settings":
+			{
+				"buffer_size": 636,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/js/filters.js",
+			"settings":
+			{
+				"buffer_size": 2353,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/partials/menu.html",
+			"settings":
+			{
+				"buffer_size": 812,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 75.0,
+		"selected_items":
+		[
+			[
+				"format",
+				"Tag: Auto-Format Tags on Document"
+			],
+			[
+				"add",
+				"Project: Add Folder"
+			],
+			[
+				"forma",
+				"Tag: Auto-Format Tags on Document"
+			],
+			[
+				"form",
+				"Tag: Auto-Format Tags on Document"
+			],
+			[
+				"auto",
+				"Tag: Auto-Format Tags on Document"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"tag",
+				"Tag: Auto-Format Tags on Document"
+			],
+			[
+				"list",
+				"Package Control: List Packages"
+			],
+			[
+				"pack",
+				"Package Control: List Packages"
+			],
+			[
+				"package",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 575.0
+	},
+	"console":
+	{
+		"height": 139.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/ernst/workspace/angularjs/Menu/app/partials/shoppinglist.html",
+		"/home/ernst/workspace/angularjs/Menu/app/index.html",
+		"/home/ernst/workspace/angularjs/Menu/app/js/app.js",
+		"/home/ernst/workspace/angularjs/Menu/app/css/app.css",
+		"/home/ernst/workspace/angularjs/Menu/app/js/filters.js",
+		"/home/ernst/workspace/angularjs/Menu/app/partials/menu.html",
+		"/home/ernst/workspace/angularjs/Menu/menu.sublime-project",
+		"/home/ernst/workspace/info.nl/belgacom-mobile-website-module/src/main/resources/belgacom-mobile-website/components/macros/pageCounter.ftl",
+		"/home/ernst/workspace/info.nl/belgacom-mobile-website-module/src/main/resources/belgacom-mobile-website/pages/products/subscriptionDetail.ftl",
+		"/home/ernst/workspace/info.nl/belgacom-mobile-website-module/src/main/resources/belgacom-mobile-website/components/products/advantageConfiguration.ftl",
+		"/home/ernst/workspace/info.nl/belgacom-mobile-theme-module/src/main/resources/templating-kit/themes/belgacom-mobile/js/modules/generic/services/PacksDesktopLinkService.js",
+		"/home/ernst/workspace/info.nl/belgacom-mobile-website-module/src/main/resources/belgacom-mobile-website/pages/products/subscription_render.ftl",
+		"/home/ernst/workspace/info.nl/belgacom-mobile-theme-module/src/main/resources/templating-kit/themes/belgacom-mobile/js/modules/subscriptionFamily/controller/SubscriptionFamily.js",
+		"/home/ernst/workspace/info.nl/belgacom-mobile-website-module/src/main/resources/belgacom-mobile-website/pages/products/packFamily.ftl",
+		"/home/ernst/workspace/info.nl/belgacom-mobile-theme-module/src/main/resources/templating-kit/themes/belgacom-mobile/js/modules/packs/controller/Packs.js",
+		"/home/ernst/workspace/info.nl/belgacom-mobile-website-module/src/main/resources/belgacom-mobile-website/pages/products/packDetail.ftl",
+		"/home/ernst/workspace/info.nl/belgacom-mobile-theme-module/src/main/resources/templating-kit/themes/belgacom-mobile/js/modules/packs/controller/Packs2.js",
+		"/home/ernst/workspace/info.nl/belgacom-mobile-theme-module/src/main/resources/templating-kit/themes/belgacom-mobile/js/modules/generic/services/DummyProductRepository.js",
+		"/home/ernst/workspace/info.nl/belgacom-mobile-website-module/src/main/resources/belgacom-mobile-website/pages/products/packDetail_main.ftl",
+		"/home/ernst/workspace/info.nl/belgacom-mobile-website-module/src/main/resources/belgacom-mobile-website/pages/products/packOverview.ftl",
+		"/home/ernst/workspace/info.nl/belgacom-mobile-website-module/src/main/resources/belgacom-mobile-website/pages/products/subscriptionFamily.ftl",
+		"/home/ernst/workspace/info.nl/belgacom-mobile-theme-module/src/main/resources/templating-kit/themes/belgacom-mobile/js/modules/generic/services/Log.js",
+		"/home/ernst/workspace/info.nl/belgacom-mobile-website-module/src/main/resources/belgacom-mobile-website/components/order/emailLink.ftl",
+		"/home/ernst/workspace/info.nl/belgacom-mobile-theme-module/src/main/resources/templating-kit/themes/belgacom-mobile/js/modules/order/OrderEmail.js",
+		"/home/ernst/workspace/info.nl/belgacom-mobile-website-module/src/main/resources/belgacom-mobile-website/components/order/emailLink-html.ftl",
+		"/home/ernst/workspace/info.nl/spa/dist/callmeback.js",
+		"/home/ernst/workspace/info.nl/spa/dist/callmebackteaser.js",
+		"/home/ernst/workspace/info.nl/belgacom-mobile-website-module/src/main/resources/belgacom-mobile-website/pages/global/footer.ftl",
+		"/home/ernst/workspace/info.nl/belgacom-mobile-website-module/src/main/resources/belgacom-mobile-website/pages/global/macros/internalOrExternalLink.ftl",
+		"/home/ernst/workspace/info.nl/belgacom-mobile-website-module/src/main/resources/belgacom-mobile-website/pages/json/subscriptionDetail.ftl",
+		"/home/ernst/workspace/info.nl/belgacom-mobile-website-module/src/main/resources/belgacom-mobile-website/pages/global/macros/valueWhenEmpty.ftl",
+		"/home/ernst/workspace/info.nl/spa/src/roaming/js/models.js",
+		"/home/ernst/workspace/info.nl/spa/node_modules/grunt-contrib-jshint/README.md",
+		"/home/ernst/workspace/info.nl/spa/src/generic/services/Log.js",
+		"/home/ernst/workspace/info.nl/spa/src/subscribe_to_newsletter/js/app.js",
+		"/home/ernst/workspace/info.nl/spa/Gruntfile.js",
+		"/home/ernst/workspace/info.nl/spa/src/roaming/js/controllers.js",
+		"/home/ernst/workspace/info.nl/spa/src/mobileshaker/js/services/MSRecommended.js",
+		"/home/ernst/workspace/info.nl/spa/src/subscribe_to_newsletter/js/services.js",
+		"/home/ernst/workspace/info.nl/spa/src/mobileshaker/js/services/MSFlowdata.js",
+		"/home/ernst/workspace/info.nl/spa/src/mobileshaker/js/controller/MobileShaker.js",
+		"/home/ernst/workspace/info.nl/spa/src/roaming/js/filters.js",
+		"/home/ernst/workspace/info.nl/spa/src/roaming/js/app.js",
+		"/home/ernst/workspace/info.nl/spa/src/roaming/js/services.js",
+		"/home/ernst/workspace/info.nl/spa/src/callmeback/js/services.js",
+		"/home/ernst/workspace/info.nl/spa/src/test/mobileshaker/json/producturls_nl.json",
+		"/home/ernst/.config/sublime-text-2/Packages/User/Preferences.sublime-settings",
+		"/home/ernst/.config/sublime-text-2/Packages/Default/Preferences.sublime-settings",
+		"/home/ernst/.config/sublime-text-2/Packages/User/JavaScript.sublime-settings",
+		"/home/ernst/workspace/info.nl/spa/src/generic/services/GetLabels.js",
+		"/home/ernst/workspace/info.nl/spa/src/generic/bootstrap.js",
+		"/home/ernst/workspace/info.nl/spa/pom.xml",
+		"/home/ernst/workspace/info.nl/spa/src/callmebackteaser/js/controllers.js",
+		"/home/ernst/workspace/info.nl/spa/src/callmebackteaser/index_magnolia.html",
+		"/home/ernst/workspace/info.nl/spa/src/callmeback_teaser/index_magnolia.html",
+		"/home/ernst/workspace/info.nl/spa/src/generic/services/OrderService.js",
+		"/home/ernst/workspace/info.nl/spa/package.json",
+		"/home/ernst/workspace/info.nl/belgacom-mobile-website-module/src/main/resources/belgacom-mobile-website/pages/products/packConfiguration.ftl",
+		"/home/ernst/workspace/info.nl/belgacom-mobile-website-module/src/main/resources/belgacom-mobile-website/pages/products/packConfigurationJson.ftl",
+		"/home/ernst/workspace/info.nl/spa/src/callmeback_teaser/js/controllers.js",
+		"/home/ernst/workspace/info.nl/spa/src/callmeback/js/controllers.js",
+		"/home/ernst/Desktop/delete.js",
+		"/home/ernst/workspace/info.nl/spa/src/callmebackteaser/index.jsp",
+		"/home/ernst/workspace/info.nl/spa/src/callmeback_teaser/index.jsp",
+		"/home/ernst/workspace/info.nl/spa/src/callmeback_teaser/i18n/labels-nl.json",
+		"/home/ernst/workspace/info.nl/spa/src/callmeback_teaser/i18n/labels-fr.json",
+		"/home/ernst/workspace/info.nl/spa/src/callmeback_teaser/i18n/labels-en.json",
+		"/home/ernst/workspace/info.nl/spa/src/callmeback/index_magnolia.html",
+		"/home/ernst/workspace/info.nl/belgacom-mobile-theme-module/src/main/resources/templating-kit/themes/belgacom-mobile/js/modules/generic/services/OrderService.js",
+		"/home/ernst/workspace/info.nl/spa/node_modules/grunt-contrib-jasmine-requirejs-template/src/template.tmpl",
+		"/home/ernst/workspace/info.nl/spa/src/generic/services/ProductRepository.js",
+		"/home/ernst/workspace/info.nl/belgacom-mobile-website-module/src/main/resources/belgacom-mobile-website/pages/global/settingsScript.ftl",
+		"/home/ernst/.cache/.fr-ToEXBj/OrderService.js",
+		"/home/ernst/.cache/.fr-7EvyUS/services.js",
+		"/home/ernst/.cache/.fr-CdxbXv/ProductRepository.js",
+		"/home/ernst/Desktop/subscription-information.js",
+		"/home/ernst/workspace/info.nl/spa/node_modules/karma-jasmine/README.md",
+		"/home/ernst/workspace/info.nl/spa/node_modules/grunt-contrib-jasmine/README.md",
+		"/home/ernst/workspace/info.nl/spa/src/test/roaming/unit/controllersSpec.js",
+		"/home/ernst/workspace/info.nl/spa/src/callmeback/index.jsp",
+		"/home/ernst/workspace/info.nl/spa/src/callmeback/index.html",
+		"/home/ernst/.config/sublime-text-2/Packages/User/Default (Linux).sublime-keymap",
+		"/home/ernst/workspace/info.nl/spa/src/callmeback/js/index.jsp",
+		"/home/ernst/workspace/info.nl/spa/node_modules/grunt-contrib-jasmine-requirejs-template/src/template.js",
+		"/home/ernst/workspace/info.nl/spa/node_modules/grunt-contrib-jasmine-requirejs-template/node_modules/istanbul/README.md",
+		"/home/ernst/workspace/info.nl/spa/node_modules/grunt-contrib-jasmine-requirejs-template/README.md",
+		"/home/ernst/workspace/info.nl/spa/src/callmeback/i18n/labels-nl.json",
+		"/home/ernst/workspace/info.nl/spa/src/callmeback/i18n/labels-en.json",
+		"/home/ernst/workspace/info.nl/belgacom-mobile-theme-module/src/main/resources/templating-kit/themes/belgacom-mobile/js/modules/generic/services/LocalStorageProductRepository.js",
+		"/home/ernst/workspace/info.nl/belgacom-mobile-theme-module/src/main/resources/templating-kit/themes/belgacom-mobile/js/modules/packs/models/PacksModel.js",
+		"/home/ernst/workspace/info.nl/belgacom-mobile-website-module/src/main/resources/belgacom-mobile-website/pages/products/subscriptionDetail-html.ftl",
+		"/home/ernst/workspace/info.nl/belgacom-mobile-website-module/src/main/resources/belgacom-mobile-website/components/macros/promoZone.ftl",
+		"/home/ernst/workspace/info.nl/belgacom-mobile-website-module/src/main/resources/belgacom-mobile-website/components/content/accordion.ftl",
+		"/home/ernst/workspace/info.nl/belgacom-mobile-website-module/src/main/resources/belgacom-mobile-website/pages/global/mainArea.ftl",
+		"/home/ernst/workspace/info.nl/belgacom-mobile-website-module/src/main/resources/belgacom-mobile-website/components/macros/priceZone.ftl",
+		"/home/ernst/workspace/info.nl/spa/src/subscribe_to_newsletter/index_magnolia.html",
+		"/home/ernst/workspace/info.nl/spa/src/subscribe_to_newsletter/index.html",
+		"/home/ernst/workspace/info.nl/spa/src/subscribe_to_newsletter/js/controllers.js",
+		"/home/ernst/workspace/info.nl/belgacom-mobile-theme-module/src/main/resources/templating-kit/themes/belgacom-mobile/js/modules/generic/controller/FooterDesktopLinkController.js",
+		"/home/ernst/workspace/info.nl/infonl.sublime-project",
+		"/home/ernst/workspace/info.nl/belgacom-mobile-theme-module/src/main/resources/templating-kit/themes/belgacom-mobile/js/modules/order/OrderPage.js",
+		"/home/ernst/workspace/info.nl/belgacom-mobile-website-module/src/main/resources/belgacom-mobile-website/pages/order/mainArea.ftl",
+		"/home/ernst/workspace/info.nl/belgacom-mobile-theme-module/src/main/resources/templating-kit/themes/belgacom-mobile/js/modules/order-email/OrderEmail.js",
+		"/home/ernst/workspace/info.nl/belgacom-mobile-website-module/src/main/java/be/belgacom/mobile/website/model/products/ProductModel.java",
+		"/home/ernst/workspace/info.nl/belgacom-mobile-website-module/src/main/resources/belgacom-mobile-website/pages/json/packDetail.ftl",
+		"/home/ernst/workspace/info.nl/belgacom-mobile-theme-module/src/main/resources/templating-kit/themes/belgacom-mobile/js/modules/generic/services/ObjectCopier.js",
+		"/home/ernst/workspace/info.nl/belgacom-mobile-website-module/src/main/resources/belgacom-mobile-website/pages/products/packDetail_subscriptions.ftl",
+		"/home/ernst/workspace/info.nl/belgacom-mobile-theme-module/src/main/resources/templating-kit/themes/belgacom-mobile/js/modules/descriptionFamily/controller/descriptionFamily.js",
+		"/home/ernst/workspace/info.nl/belgacom-mobile-website-module/src/main/resources/belgacom-mobile-website/pages/json/jsonMacros.ftl",
+		"/home/ernst/workspace/info.nl/belgacom-mobile-website-module/src/main/resources/belgacom-mobile-website/components/home/carouselItem.ftl",
+		"/home/ernst/workspace/info.nl/belgacom-mobile-website-module/src/main/resources/belgacom-mobile-website/components/products/subscriptionFamilySummary.ftl",
+		"/home/ernst/workspace/info.nl/belgacom-mobile-website-module/src/main/resources/belgacom-mobile-website/components/footer/footerLinkList.ftl",
+		"/home/ernst/workspace/info.nl-frontend/belgacom/frontend-grunt/test/modules/callmeback/service/DummyCallMeBack-spec.js",
+		"/home/ernst/workspace/info.nl-frontend/belgacom/frontend-grunt/package.json",
+		"/home/ernst/workspace/info.nl-frontend/belgacom/frontend-grunt/node_modules/grunt-install-dependencies/tasks/install-dependencies.js",
+		"/home/ernst/workspace/info.nl-frontend/belgacom/frontend-grunt/Gruntfile.js",
+		"/home/ernst/workspace/info.nl-frontend/belgacom/frontend-grunt/app-angular/modules/callmeback/directives/MessageParser.js",
+		"/home/ernst/workspace/info.nl-frontend/belgacom/frontend-grunt/app-angular/modules/callmeback/services/IVRMessageParser.js",
+		"/home/ernst/workspace/info.nl-frontend/belgacom/frontend-grunt/app-angular/modules/callmeback/services/DummyCallMeBackService.js",
+		"/home/ernst/workspace/info.nl-frontend/belgacom/frontend-grunt/app-angular/modules/generic/directives/accordion.js",
+		"/home/ernst/workspace/info.nl-frontend/belgacom/frontend-grunt/templates/pages/12-angular-call-me-back.html",
+		"/home/ernst/bindist/angular-0.10.0/angular-0.10.0.js",
+		"/home/ernst/bindist/angular-0.10.0/jstd-scenario-adapter-0.10.0.js",
+		"/home/ernst/bindist/angular-0.10.0/jstd-scenario-adapter-config-0.10.0.js",
+		"/home/ernst/workspace/info.nl-frontend/belgacom/frontend-grunt/app-angular/modules/generic/services/DummyCallMeBackService.js",
+		"/home/ernst/workspace/info.nl-frontend/belgacom/frontend-grunt/app-angular/modules/callmeback/controller/CallMeBack.js",
+		"/home/ernst/workspace/info.nl-frontend/belgacom/frontend-grunt/app-angular/modules/callmeback/factories/CallMeBackDependencies.js",
+		"/home/ernst/workspace/info.nl-frontend/belgacom/frontend-grunt/app-angular/modules/generic/services/LocalStrorageProductRepository.js"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"/home/ernst/workspace/info.nl/belgacom-mobile-website-module"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"\"ki\"",
+			"recei",
+			"receip",
+			"recei",
+			"receips",
+			"receipe",
+			"\"shoppinglist\": true,",
+			"\"\",",
+			"\"plural\":",
+			" \"",
+			"\": ",
+			"\"plural\":",
+			" \"",
+			"\"\"},",
+			"shoppinglist",
+			"\"\"},\n",
+			"button",
+			"components",
+			"name",
+			"teaserCounter",
+			"counter.ftl",
+			">",
+			"				{",
+			"$wat",
+			"createDesktopLink",
+			"addSubscriptionsToURL",
+			"\n[#",
+			"internalOrExternalLink",
+			"esnext",
+			"alert",
+			"log",
+			"alert",
+			"==",
+			"save",
+			"src_test",
+			"template",
+			"');\n",
+			"lib_test",
+			"ng-bin",
+			"qunit",
+			"jas",
+			"data",
+			";\n",
+			"remote_done",
+			"stora",
+			"repository",
+			"log.log",
+			"Log",
+			"scope.uselected",
+			"set_local",
+			"remote_done",
+			"configure",
+			"types",
+			"uselected",
+			"getSelectIndex",
+			"settings",
+			"}]\n",
+			"\n    ",
+			"resourceDir",
+			"injector",
+			"test",
+			"}}</",
+			"			</",
+			".",
+			"ll.to.action.but",
+			"all.to.action.but",
+			".",
+			"clean",
+			"angular",
+			"copy:vendor_js",
+			"build-js",
+			"data-",
+			"ctrl+alt+f",
+			"f",
+			"data-",
+			"lang",
+			"bent u",
+			"\\n",
+			"'';",
+			");\n",
+			"language-cookie",
+			"enterprise",
+			"divClass",
+			"jett"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"\"kg\"",
+			"recipe",
+			"recipes",
+			"recipe",
+			"",
+			"counterName",
+			"counterValue",
+			"===",
+			"src",
+			"src_test",
+			"-",
+			"&"
+		],
+		"reverse": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "app/data/menu.json",
+					"settings":
+					{
+						"buffer_size": 15213,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								11124,
+								11124
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/JavaScript/JSON.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true,
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2866.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/data/scratch.json",
+					"settings":
+					{
+						"buffer_size": 1096,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								28,
+								28
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/JavaScript/JSON.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/js/controllers.js",
+					"settings":
+					{
+						"buffer_size": 3628,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3460,
+								3460
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 812.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/js/services.js",
+					"settings":
+					{
+						"buffer_size": 2201,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1242,
+								1242
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 90.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "app/js/app.js",
+					"settings":
+					{
+						"buffer_size": 636,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								533,
+								533
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "app/js/filters.js",
+					"settings":
+					{
+						"buffer_size": 2353,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1990,
+								1990
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 174.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "app/partials/menu.html",
+					"settings":
+					{
+						"buffer_size": 812,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								532,
+								532
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110
+							],
+							"gjslint_options":
+							[
+							],
+							"is_xml": false,
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"get",
+				"spa/src/generic/services/GetLabels.js"
+			],
+			[
+				"dumm",
+				"belgacom-mobile-theme-module/src/main/resources/templating-kit/themes/belgacom-mobile/js/modules/generic/services/DummyProductRepository.js"
+			],
+			[
+				"emai",
+				"belgacom-mobile-website-module/src/main/resources/belgacom-mobile-website/components/order/emailLink-html.ftl"
+			],
+			[
+				"emailli",
+				"belgacom-mobile-website-module/src/main/resources/belgacom-mobile-website/components/order/emailLink.ftl"
+			],
+			[
+				"button",
+				"belgacom-mobile-website-module/src/main/resources/belgacom-mobile-website/components/content/button.ftl"
+			],
+			[
+				"packte",
+				"belgacom-mobile-theme-module/src/main/resources/templating-kit/themes/belgacom-mobile/js/modules/packTeaser/controller/PackTeaser.js"
+			],
+			[
+				"rescon",
+				"belgacom-mobile-website-module/src/main/resources/belgacom-mobile-website/components/macros/resourceConditions.ftl"
+			],
+			[
+				"hea",
+				"belgacom-mobile-website-module/src/main/resources/belgacom-mobile-website/pages/global/header.ftl"
+			],
+			[
+				"subscride",
+				"belgacom-mobile-website-module/src/main/resources/belgacom-mobile-website/pages/products/subscriptionDetail.ftl"
+			],
+			[
+				"packtea",
+				"belgacom-mobile-website-module/src/main/resources/belgacom-mobile-website/components/products/packTeaser.ftl"
+			],
+			[
+				"packsdesk",
+				"belgacom-mobile-theme-module/src/main/resources/templating-kit/themes/belgacom-mobile/js/modules/generic/services/PacksDesktopLinkService.js"
+			],
+			[
+				"packfam",
+				"belgacom-mobile-website-module/src/main/resources/belgacom-mobile-website/pages/products/packFamily.ftl"
+			],
+			[
+				"subscfam",
+				"belgacom-mobile-theme-module/src/main/resources/templating-kit/themes/belgacom-mobile/js/modules/subscriptionFamily/controller/SubscriptionFamily.js"
+			],
+			[
+				"subscri",
+				"belgacom-mobile-website-module/src/main/resources/belgacom-mobile-website/pages/products/subscription_render.ftl"
+			],
+			[
+				"packs.j",
+				"belgacom-mobile-theme-module/src/main/resources/templating-kit/themes/belgacom-mobile/js/modules/packs/controller/Packs.js"
+			],
+			[
+				"packdet",
+				"belgacom-mobile-website-module/src/main/resources/belgacom-mobile-website/pages/products/packDetail.ftl"
+			],
+			[
+				"packde",
+				"belgacom-mobile-website-module/src/main/resources/belgacom-mobile-website/pages/products/packDetail_main.ftl"
+			],
+			[
+				"pack",
+				"belgacom-mobile-website-module/src/main/resources/belgacom-mobile-website/pages/products/packOverview.ftl"
+			],
+			[
+				"render",
+				"belgacom-mobile-website-module/src/main/resources/belgacom-mobile-website/pages/products/subscription_render.ftl"
+			],
+			[
+				"subsfam",
+				"belgacom-mobile-website-module/src/main/resources/belgacom-mobile-website/pages/products/subscriptionFamily.ftl"
+			],
+			[
+				"packt",
+				"belgacom-mobile-theme-module/src/main/resources/templating-kit/themes/belgacom-mobile/js/modules/packTeaser/controller/PackTeaser.js"
+			],
+			[
+				"packs",
+				"belgacom-mobile-theme-module/src/main/resources/templating-kit/themes/belgacom-mobile/js/modules/packs/controller/Packs.js"
+			],
+			[
+				"call",
+				"spa/dist/callmeback.js"
+			],
+			[
+				"email",
+				"belgacom-mobile-website-module/src/main/resources/belgacom-mobile-website/components/order/emailLink-html.ftl"
+			],
+			[
+				"orderm",
+				"belgacom-mobile-theme-module/src/main/resources/templating-kit/themes/belgacom-mobile/js/modules/order/OrderEmail.js"
+			],
+			[
+				"subscriptionde",
+				"belgacom-mobile-website-module/src/main/resources/belgacom-mobile-website/pages/products/subscriptionDetail.ftl"
+			],
+			[
+				"callme",
+				"spa/dist/callmebackteaser.js"
+			],
+			[
+				"footer",
+				"belgacom-mobile-website-module/src/main/resources/belgacom-mobile-website/pages/global/footer.ftl"
+			],
+			[
+				"intern",
+				"belgacom-mobile-website-module/src/main/resources/belgacom-mobile-website/pages/global/macros/internalOrExternalLink.ftl"
+			],
+			[
+				"subfam",
+				"belgacom-mobile-theme-module/src/main/resources/templating-kit/themes/belgacom-mobile/js/modules/subscriptionFamily/controller/SubscriptionFamily.js"
+			],
+			[
+				"subde",
+				"belgacom-mobile-website-module/src/main/resources/belgacom-mobile-website/pages/json/subscriptionDetail.ftl"
+			],
+			[
+				"subs_ren",
+				"belgacom-mobile-website-module/src/main/resources/belgacom-mobile-website/pages/products/subscription_render.ftl"
+			],
+			[
+				"subscrfam",
+				"belgacom-mobile-website-module/src/main/resources/belgacom-mobile-website/pages/products/subscriptionFamily.ftl"
+			],
+			[
+				"log.js",
+				"spa/src/generic/services/Log.js"
+			],
+			[
+				"roamcont",
+				"spa/src/roaming/js/controllers.js"
+			],
+			[
+				"subsservi",
+				"spa/src/subscribe_to_newsletter/js/services.js"
+			],
+			[
+				"msrec",
+				"spa/src/mobileshaker/js/services/MSRecommended.js"
+			],
+			[
+				"mobile",
+				"spa/src/mobileshaker/js/controller/MobileShaker.js"
+			],
+			[
+				"msflo",
+				"spa/src/mobileshaker/js/services/MSFlowdata.js"
+			],
+			[
+				"ser",
+				"spa/src/subscribe_to_newsletter/js/services.js"
+			],
+			[
+				"services",
+				"spa/src/subscribe_to_newsletter/js/services.js"
+			],
+			[
+				"msflow",
+				"spa/src/mobileshaker/js/services/MSFlowdata.js"
+			],
+			[
+				"log.j",
+				"spa/src/generic/services/Log.js"
+			],
+			[
+				"packcon",
+				"belgacom-mobile-website-module/src/main/resources/belgacom-mobile-website/pages/products/packConfigurationJson.ftl"
+			],
+			[
+				"packc",
+				"belgacom-mobile-website-module/src/main/resources/belgacom-mobile-website/pages/products/packConfiguration.ftl"
+			],
+			[
+				"subsc_ren",
+				"belgacom-mobile-website-module/src/main/resources/belgacom-mobile-website/pages/products/subscription_render.ftl"
+			],
+			[
+				"subscfa",
+				"belgacom-mobile-website-module/src/main/resources/belgacom-mobile-website/pages/products/subscriptionFamily.ftl"
+			],
+			[
+				"subscr",
+				"belgacom-mobile-website-module/src/main/resources/belgacom-mobile-website/pages/json/subscriptionDetail.ftl"
+			],
+			[
+				"getl",
+				"spa/src/generic/services/GetLabels.js"
+			],
+			[
+				"orderser",
+				"belgacom-mobile-theme-module/src/main/resources/templating-kit/themes/belgacom-mobile/js/modules/generic/services/OrderService.js"
+			],
+			[
+				"orderservice",
+				"belgacom-mobile-theme-module/src/main/resources/templating-kit/themes/belgacom-mobile/js/modules/generic/services/OrderService.js"
+			],
+			[
+				"subscrip.js",
+				"belgacom-mobile-theme-module/src/main/resources/templating-kit/themes/belgacom-mobile/js/modules/subscriptionFamily/controller/SubscriptionFamily.js"
+			],
+			[
+				"foot",
+				"belgacom-mobile-website-module/src/main/resources/belgacom-mobile-website/pages/global/footer.ftl"
+			],
+			[
+				"producrep",
+				"spa/src/generic/services/ProductRepository.js"
+			],
+			[
+				"productre",
+				"belgacom-mobile-theme-module/src/main/resources/templating-kit/themes/belgacom-mobile/js/modules/generic/services/DummyProductRepository.js"
+			],
+			[
+				"dummy",
+				"belgacom-mobile-theme-module/src/main/resources/templating-kit/themes/belgacom-mobile/js/modules/generic/services/DummyProductRepository.js"
+			],
+			[
+				"subscrfa",
+				"belgacom-mobile-website-module/src/main/resources/belgacom-mobile-website/pages/products/subscriptionFamily.ftl"
+			],
+			[
+				"packs.",
+				"belgacom-mobile-theme-module/src/main/resources/templating-kit/themes/belgacom-mobile/js/modules/packs/controller/Packs.js"
+			],
+			[
+				"local",
+				"belgacom-mobile-theme-module/src/main/resources/templating-kit/themes/belgacom-mobile/js/modules/generic/services/LocalStorageProductRepository.js"
+			],
+			[
+				"packdetail",
+				"belgacom-mobile-website-module/src/main/resources/belgacom-mobile-website/pages/products/packDetail.ftl"
+			],
+			[
+				"subscripde",
+				"belgacom-mobile-website-module/src/main/resources/belgacom-mobile-website/pages/json/subscriptionDetail.ftl"
+			],
+			[
+				"packsmode",
+				"belgacom-mobile-theme-module/src/main/resources/templating-kit/themes/belgacom-mobile/js/modules/packs/models/PacksModel.js"
+			],
+			[
+				"subscrren",
+				"belgacom-mobile-website-module/src/main/resources/belgacom-mobile-website/pages/products/subscription_render.ftl"
+			],
+			[
+				"subscrde",
+				"belgacom-mobile-website-module/src/main/resources/belgacom-mobile-website/pages/products/subscriptionDetail.ftl"
+			],
+			[
+				"packs.js",
+				"belgacom-mobile-theme-module/src/main/resources/templating-kit/themes/belgacom-mobile/js/modules/packs/controller/Packs.js"
+			],
+			[
+				"subscd",
+				"belgacom-mobile-website-module/src/main/resources/belgacom-mobile-website/pages/json/subscriptionDetail.ftl"
+			],
+			[
+				"mainare",
+				"belgacom-mobile-website-module/src/main/resources/belgacom-mobile-website/pages/global/mainArea.ftl"
+			],
+			[
+				"subscriptde",
+				"belgacom-mobile-website-module/src/main/resources/belgacom-mobile-website/pages/json/subscriptionDetail.ftl"
+			],
+			[
+				"pack.js",
+				"belgacom-mobile-theme-module/src/main/resources/templating-kit/themes/belgacom-mobile/js/modules/packs/models/PacksModel.js"
+			],
+			[
+				"emaili",
+				"belgacom-mobile-website-module/src/main/resources/belgacom-mobile-website/components/order/emailLink-html.ftl"
+			],
+			[
+				"emaill",
+				"belgacom-mobile-website-module/src/main/resources/belgacom-mobile-website/components/order/emailLink.ftl"
+			],
+			[
+				"subsde",
+				"belgacom-mobile-website-module/src/main/resources/belgacom-mobile-website/pages/json/subscriptionDetail.ftl"
+			],
+			[
+				"packdeft",
+				"belgacom-mobile-website-module/src/main/resources/belgacom-mobile-website/pages/json/packDetail.ftl"
+			],
+			[
+				"ordser",
+				"belgacom-mobile-theme-module/src/main/resources/templating-kit/themes/belgacom-mobile/js/modules/generic/services/OrderService.js"
+			],
+			[
+				"productmod",
+				"belgacom-mobile-website-module/src/main/java/be/belgacom/mobile/website/model/products/ProductModel.java"
+			],
+			[
+				"orderemai",
+				"belgacom-mobile-theme-module/src/main/resources/templating-kit/themes/belgacom-mobile/js/modules/order-email/OrderEmail.js"
+			],
+			[
+				"packsmodel",
+				"belgacom-mobile-theme-module/src/main/resources/templating-kit/themes/belgacom-mobile/js/modules/packs/models/PacksModel.js"
+			],
+			[
+				"subscriptionfa",
+				"belgacom-mobile-theme-module/src/main/resources/templating-kit/themes/belgacom-mobile/js/modules/subscriptionFamily/controller/SubscriptionFamily.js"
+			],
+			[
+				"packsmod",
+				"belgacom-mobile-theme-module/src/main/resources/templating-kit/themes/belgacom-mobile/js/modules/packs/models/PacksModel.js"
+			],
+			[
+				"packconfi",
+				"belgacom-mobile-website-module/src/main/resources/belgacom-mobile-website/pages/products/packConfiguration.ftl"
+			],
+			[
+				"pricez",
+				"belgacom-mobile-website-module/src/main/resources/belgacom-mobile-website/components/macros/priceZone.ftl"
+			],
+			[
+				"subscriptionf",
+				"belgacom-mobile-theme-module/src/main/resources/templating-kit/themes/belgacom-mobile/js/modules/subscriptionFamily/controller/SubscriptionFamily.js"
+			],
+			[
+				"packdetai",
+				"belgacom-mobile-website-module/src/main/resources/belgacom-mobile-website/pages/json/packDetail.ftl"
+			],
+			[
+				"subscrfa.js",
+				"belgacom-mobile-theme-module/src/main/resources/templating-kit/themes/belgacom-mobile/js/modules/descriptionFamily/controller/descriptionFamily.js"
+			],
+			[
+				"subs_rend",
+				"src/main/resources/belgacom-mobile-website/pages/products/subscription_render.ftl"
+			],
+			[
+				"subsfamil",
+				"src/main/resources/belgacom-mobile-website/pages/products/subscriptionFamily.ftl"
+			],
+			[
+				"subsfamsu",
+				"src/main/resources/belgacom-mobile-website/components/products/subscriptionFamilySummary.ftl"
+			],
+			[
+				"emaillin",
+				"src/main/resources/belgacom-mobile-website/components/order/emailLink-html.ftl"
+			],
+			[
+				"subsfams",
+				"src/main/resources/belgacom-mobile-website/components/products/subscriptionFamilySummary.ftl"
+			],
+			[
+				"bootstr",
+				"app-angular/bootstrap.js"
+			],
+			[
+				"boots",
+				"app-angular/bootstrap.js"
+			],
+			[
+				"prorep",
+				"app-angular/modules/generic/services/DummyProductRepository.js"
+			],
+			[
+				"log",
+				"app-angular/modules/generic/services/Log.js"
+			],
+			[
+				"boot",
+				"app-angular/bootstrap.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 166.0,
+	"status_bar_visible": true
+}
