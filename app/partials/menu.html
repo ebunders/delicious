@@ -1,5 +1,4 @@
-<div class="dinner">
-    <a id="home"></a>
+<div class="dinner container">
     <h1>Recepten</h1>
     <h3>{{data.menu.name}}</h3>
     <p>Aantal personen:</p>
@@ -8,7 +7,7 @@
     <div class="contents">
         <h3>Inhoud</h3>
         <div class="section" ng-repeat="section in data.menu.sections">
-            <p class="section">{{section.section}}</p>
+            <p class="section">{{section.name}}</p>
             <ol>
                <li ng-repeat="recipe in section.recipes"><a scroll-to="recipe{{recipe.id}}"> {{recipe.name}} </a></li>
             </ol>
@@ -21,19 +20,22 @@
         <div class="recipe" ng-repeat="recipe in section.recipes">
             <a id="recipe{{recipe.id}}"></a>
             <h3>{{recipe.name}}</h3>
-            <a scroll-to="home">inhoud</a>
-            <div class="ingredients">
-                <h5>Ingredienten</h5>
-                <div ng-repeat="section in recipe.ingredients">
-                    <p class="section" ng-hide="section.section == 'main'">{{section.section}}</p>
-                    <p class="ingredient" ng-repeat="ingredient in section.contents">{{ingredient | readableIngredient:recipe:data}}</p>
+            <p class="subtitle">{{recipe.subtitle}}</p>
+            <a class="navigation" scroll-to="home">terug naar inhoud</a>
+            <div class="row">
+                <div class="ingredients col-sm-4">
+                    <h5>Ingredienten</h5>
+                    <div ng-repeat="section in recipe.ingredients">
+                        <p class="section" ng-hide="section.section == 'main'">{{section.section}}</p>
+                        <p class="ingredient" ng-repeat="ingredient in section.contents">{{ingredient | readableIngredient:recipe:data}}</p>
+                    </div>
                 </div>
-            </div>
-            <div class="description" >
-                <h5>Uitleg</h5>
-                <ol>
-                    <li ng-repeat="description in recipe.description">{{description}}</li>
-                </ol>
+                <div class="description col-sm-8" >
+                    <h5>Uitleg</h5>
+                    <ol>
+                        <li ng-repeat="description in recipe.description">{{description}}</li>
+                    </ol>
+                </div>
             </div>
             <hr/>
         </div>

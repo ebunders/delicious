@@ -32,14 +32,16 @@
 
 .dinner p {margin: 2px ; }
 .dinner .ingredients h5, .dinner .description h5 {font-weight: bold; text-decoration: underline;}
-.dinner .section {padding-top: 4px; font-style: italic; font-size: 1.2em;}
+.dinner .section .ingredients{padding-top: 4px; font-style: italic;}
+.dinner .section .ingredients .section {font-weight: bold}
 .dinner .section h2 {text-align: center; font-style: italic;}
 .dinner .ingredients .ingredient {padding-left: 4px;}
-.dinner .recipe h3 {width: 100%; background-color: #EDEDED;}
+.dinner .recipe h3 {width: 100%; background-color: #EDEDED; margin-bottom: 5px;}
+.dinner .recipe .subtitle {font-style: italic; margin: 0 0 10px 10px;}
+.dinner .recipe .navigation {float: right;}
 /*.dinner .recipe {border: 1px solid grey;}*/
-.dinner .recipe .ingredients,  .dinner .recipe .description{ float: left; padding: 0 15px;}
-.dinner .recipe .description{width: 50%;}
-.dinner .recipe {clear: both; overflow: hidden}
+.dinner .recipe .ingredients,  .dinner .recipe .description{  padding: 0 15px;}
+/*.dinner .recipe .description{width: 50%;}*/
 
 .shoppinglist .ingredients{
   -moz-column-count:2; /* Firefox */
@@ -50,3 +52,9 @@
 
 .shoppinglist .ingredients .category{font-weight: bold; text-decoration: underline;}
 .shoppinglist .ingredients .ingredient{margin: 0 0 2px 4px;}
+
+@media print{
+  /*p {font-size: 0.5em ;}*/
+  body {font-size: 9pt;}
+  /*.dinner {display: none;}*/
+}

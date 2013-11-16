@@ -21,24 +21,26 @@
         {"name": "koenjit", "category":4, "code": "koe"},
         {"name": "knoflook", "unit":"bol", "category":1, "code": "kno"},
         {"name": "kool", "plural": "kolen", "category":1, "code": "ko"},
-        {"name": "koriander", "category":3, "code": "kor"},
         {"name": "ketjap manis", "category":4, "code": "km"},
         {"name": "krenten", "category":3, "code": "kr"},
         {"name": "kruidnagel", "plural":"kruidnagelen", "category":3, "code": "krn"},
         {"name": "ketoembar", "category":4, "code": "ket"},
         {"name": "rode lombok", "plural": "rode lomboks", "category":4, "code": "lor"},
         {"name": "laos wortel", "category":4, "code": "la"},
+        {"name": "maizena", "category":3, "code": "ma"},
         {"name": "nootmuskaat", "category":3, "code": "nm"},
         {"name": "petis oedang", "category":4, "code": "po"},
         {"name": "pijpkaneel", "category":3, "code": "pk"},
         {"name": "prij", "category":1, "code": "pr"},
+        {"name": "pandan rijst", "category":4, "code": "rp"},
+        {"name": "pandan blad", "plural":"pandan bladeren", "category":4, "code": "blp"},
         {"name": "rode wijn", "category":3, "code": "rw"},
         {"name": "rundergehakt", "category":2, "code": "rgh"},
         {"name": "sambal oelek", "category":4, "code": "saoe"},
         {"name": "salam blad", "plural": "salam bladeren", "category":4, "code": "sbl"},
         {"name": "sambal trassi", "category":4, "code": "satr"},
         {"name": "santen", "unit":"blok", "category":4, "code": "sa"},
-        {"name": "sereh", "unit":"spriet", "category":4, "code": "se"},
+        {"name": "spriet sereh", "plural":"sprieten serreh", "category":4, "code": "se"},
         {"name": "selderie", "category":1, "code": "sel"},
         {"name": "slaolie", "category":3, "code": "so"},
         {"name": "sjalot", "plural": "sjalotten", "category":1, "code": "sj"},
@@ -47,6 +49,7 @@
         {"name": "tomaten", "category":1,"code": "tom"},
         {"name": "trassi", "category":1,"code": "tr"},
         {"name": "ui", "plural": "uien",  "code": "ui", "category":1},
+        {"name": "verse koriander", "category":3, "code": "kor"},
         {"name": "vissaus", "code": "vs", "category":4},
         {"name": "witte peper", "category":3, "code": "pw"},
         {"name": "water", "shoppinglist": false, "code": "wa"},
@@ -56,7 +59,8 @@
         {"name": "zwarte peper", "category":3, "code": "pz"}
     ],
     "units": [
-        {"name": "mm",  "code": "ml"},
+        {"name": "mm",  "code": "mm"},
+        {"name": "ml",  "code": "ml"},
         {"name": "dl",  "code": "dl"},
         {"name": "l",  "code": "l"},
         {"name": "liter",  "code": "l"},
@@ -102,18 +106,20 @@
                         {"amount": 1 , "unit": "cm", "ingredient": "koe"},
                         {"amount": 1 , "unit": "cm", "ingredient": "ge"},
                         {"amount": 2 , "unit": "tl", "ingredient": "gj"},
-                        {"amount": 1 , "unit": "el", "ingredient": "km"}
+                        {"amount": 1 , "unit": "el", "ingredient": "km"},
+                        {"ingredient": "zt"}
                     ]
                 }
             ],
             "description": [
-                "Snij de tofu in dobbelstenen, druk er zoveel mogelijk vocht uit met een theedoek. Laat de olie goed heet worden en bak de tofu goudkleurig. Zet apart in een vergiet.",
+                "Rol de tofu in een theedoek, en druk er zoveel mogelijk vocht uit. Snij haar dan in dobbelstenen. Laat de olie goed heet worden en bak de tofu goudkleurig. Zet apart in een vergiet.",
                 "Wrijf de ingredienten voor de kruidenpasta in de vijzel met een scheutje olie tot een brij. fruit deze voorzichtig in het restant olie. Voeg hier het water, de ketjap en de santen bij.",
-                "Voeg de uitgelekte tahoe toe, en laat het gerecht een tijdje smoren tot de sous begint in te dikken."
+                "Voeg de uitgelekte tahoe toe, en laat het gerecht een tijdje smoren tot de saus begint in te dikken."
             ]
         },
         {
-            "name": "Eieren met petis",
+            "name":"Telor petis",
+            "subtitle": "Eieren in een saus met garnalenpasta",
             "id":"1",
             "ref": "beb-vuyk:320",
             "persons": 4,
@@ -127,7 +133,7 @@
                         {"amount": 2 , "ingredient": "zo", "unit": "el"},
                         {"amount": 1,  "ingredient": "se"},
                         {"amount": 2,  "ingredient": "sbl"},
-                        {"amount": 0.5, "modifier": "sap van", "ingredient": "ci"}
+                        {"amount": 0.5, "note": "sap van", "ingredient": "ci"}
                     ]
                 },
                 {
@@ -137,22 +143,23 @@
                         {"amount": 2 , "unit": "tn", "ingredient": "kno", "modifier": "gesnipperde"},
                         {"amount": 1 , "unit": "tl", "ingredient": "satr"},
                         {"amount": 1, "unit": "cm", "ingredient": "la"},
-                        {"amount": 2, "ingredient": "sbl"},
                         {"amount": 1, "unit": "tl", "ingredient": "gj"},
-                        {"amount": 1, "unit": "tl", "ingredient": "po"}
+                        {"amount": 1, "unit": "tl", "ingredient": "po"},
+                        {"ingredient": "zt", "note":"niet teveel, de petis is al heel zout"}
 
                     ]
                 }
             ],
             "description": [
-                "Kook eieren vier minuten en pel ze. Prik er met een sate prikker van alle kanten doorheen, zodat de sous er goed in kan trekken.",
+                "Kook eieren vier minuten en pel ze. Prik er met een sate prikker van alle kanten doorheen, zodat de saus er goed in kan trekken.",
                 "Wrijf de ingredienten voor de kruiden pasta samen, en fruit het tot het de uitjes karameliseren.",
                 "Voeg santen en water toe, en ook de de sereh en de salam bladeren. Voeg ook de eieren toe. Breng aan de kook.",
-                "Stoof dit ongeveer 20 minuten zachtjes, tot de sous begint in te dikken. Voeg op het laatst de citroen sap nog toe."
+                "Stoof dit ongeveer 20 minuten zachtjes, tot de saus begint in te dikken. Voeg op het laatst de citroen sap nog toe."
             ]
         },
         {
             "name": "Atjar Timor",
+            "subtitle":"Timorees zuur",
             "ref": "beb-vuyk:417",
             "id":"2",
             "persons": 4,
@@ -162,21 +169,21 @@
                     "contents": [
                         {"amount": 0.5 , "ingredient": "kom", "note": "ontpit en in stukken gesneden"},
                         {"amount": 100, "unit": "gr"  , "ingredient": "tao"},
-                        {"amount": 100, "unit": "gr", "ingredient": "ko", "note": "bij voorbaat spitskool"},
+                        {"amount": 100, "unit": "gr", "ingredient": "ko", "note": "bij voorkeur spitskool, fijn gesneden"},
                         {"amount": 4, "unit": "el", "ingredient": "az"},
-                        {"amount": 8, "ingredient": "sj", "note": "gehalveerd"},
+                        {"amount": 8, "modifier":"kleine", "note": "gepeld en gehalveerd", "ingredient": "sj"},
                         {"amount": 3, "unit":"tn", "ingredient": "kno", "note": "geperst"},
                         {"amount": 2, "ingredient": "lor", "note": "ontpit en in reepjes gesneden"},
-                        {"amount": 2, "unit": "cm", "ingredient": "ge"},
+                        {"amount": 2, "unit": "cm", "ingredient": "ge", "note":"fijngehakt"},
                         {"amount": 0.5, "unit": "el", "ingredient": "gj"},
                         {"ingredient": "zt"}
                     ]
                 }
             ],
             "description": [
-                "Kook de azijn met de suiker, het knoflook sap en het zout, en stroor er de gehakte gember doorheen",
                 "Maak de groente schoon, laat ze uitlekken.",
-                "Kook de komkommer en de kool vijf minuten mee. Voeg dan de lomboks toe.",
+                "Breng de azijn aan de kook met de suiker, het knoflook sap, het zout en de gehakte gember.",
+                "Kook de komkommer, de kool en de sjalotjes vijf minuten mee. Voeg dan de lomboks toe.",
                 "Roer er als laatste de taogé doorheen en laat het nog een minuutje koken."
             ]
         },
@@ -191,7 +198,7 @@
                     "contents": [
                         {"amount":800, "unit": "gr"  , "ingredient": "ki"},
                         {"amount":4, "unit":"el", "ingredient": "kr", "note":"gewassen"},
-                        {"amount":3, "unit":"el", "ingredient": "bl"},
+                        {"amount":1, "unit":"tl", "ingredient": "ma"},
                         {"amount":4, "unit":"el", "ingredient": "zo"},
                         {"amount":3, "ingredient": "krn"},
                         {"amount":3, "unit":"cm", "ingredient": "pk"},
@@ -203,9 +210,9 @@
                 }
             ],
             "description": [
-                "Snij de kip in stukken en wrijf haar in met peper en zout. Braad de stukken op in de olie tot ze er goudbruin uit ziet, voeg dan een scheut water toe en maak haar af met de wijn en het citroen sap.",
-                "Voeg de krenten, kruidnagel en de kaneel toe, en stoof de kip gaar.",
-                "Maak de bloem lichtbruin door haar droog te bakken in een koekepan met dikke bodem. Maak het aan met enkele eetlepels water en bind hiermee de sous."
+                "Snij de kip in stukken en wrijf haar in met peper en zout. Braad de stukken op in de olie tot ze er goudbruin uit ziet, voeg dan een scheutje water toe en maak haar af met de wijn en het citroen sap.",
+                "Voeg de krenten, kruidnagel en de kaneel toe, en stoof de kip hierin gaar.",
+                "Maak een papje van de maizena en wat koud water, en roer dit voorzichtig door de saus om haar te binden. Doe dit rustig aan, de saus moet niet te dik worden."
             ]
         },
         {
@@ -217,7 +224,7 @@
                 {
                     "section": "main",
                     "contents": [
-                        {"amount":0.25, "unit":"kg", "ingredient": "sb"},
+                        {"amount":0.3, "unit":"kg", "ingredient": "sb"},
                         {"amount":1, "ingredient": "se"},
                         {"amount":1, "ingredient": "sbl"},
                         {"amount":0.16, "ingredient": "sa"},
@@ -240,11 +247,12 @@
                 "Maak de boontjes schoon en halveer ze. Kook ze een paar minuten tot ze niet meer helemaal hard zijn. Giet ze af.",
                 "Wrijf de ingredienten voor de kruidenpasta in de vijzel met een scheutje olie tot een brij. fruit deze voorzichtig in het restant olie.",
                 "voeg de boontjes toe, en zet het vuur hoog. Bak het geheel een tijdje, blijf roeren om te zorgen dat het niet aanbrand.",
-                "voeg een scheut water toe, en zet het vuur laag als het kookt. Voeg santen, sereh en salam blad toe. Laat ongeveer vijftien minuten pruttelen."
+                "voeg een scheut water toe, en zet het vuur laag als het kookt. Voeg santen, sereh en salam blad toe, en doe het deksel op de pan. Lekker laten pruttelen tot de saus dik genoeg is en de boontjes gaar. Af en toe roeren. Als de saus te snel indikt nog wat water toevoegen"
             ]
         },
         {
-            "name": "Maiskoekjes",
+            "name": "Perkedèl djagoeng",
+            "subtitle": "Koekjes van jonge mais",
             "id": "5",
             "ref": "beb-vuyk:388",
             "persons":4  ,
@@ -266,7 +274,8 @@
                         {"amount":1, "unit": "el", "ingredient": "gui"},
                         {"amount":1, "unit": "tn", "ingredient": "kno", "note": "gesnipperd"},
                         {"amount":2,  "ingredient": "kn", "note": "gepoft en fijn gemalen"},
-                        {"ingredient": "sa"},
+                        {"amount":1,  "ingredient": "sa", "unit":"el", "note": "gesnipperd"},
+                        {"ingredient": "zt"},
                         {"ingredient": "pz"}
                     ]
                 }
@@ -297,12 +306,13 @@
             ],
             "description": [
                 "Dompel de tomaten een minuut in kokend water. Trek de schil eraf en snij ze in dikke plakken.",
-                "Meng sambal, ketjap, knoflook en citroensap met de olie tot een sous.",
+                "Meng sambal, ketjap, knoflook en citroensap met de olie tot een saus.",
                 "Giet dit sausje kort voor het opdienen over de tomaat."
             ]
         },
         {
             "name": "Pastel goreng",
+            "subtitle": "Gebakken pasteitjes",
             "id": "7",
             "ref": "http://www.dekokendeboekverkoper.nl/pastel-goreng/",
             "persons": 10,
@@ -331,26 +341,26 @@
                         {"amount":1, "unit":"tl", "ingredient": "dji"},
                         { "ingredient": "zt", "note":"naar smaak"},
                         { "ingredient": "pz", "note":"naar smaak"},
-                        {"amount":3, "ingredient": "ei", "note":"gekookt"},
+                        {"amount":3, "ingredient": "ei" },
                         {"amount":3, "unit":"el", "ingredient": "kor"}
 
                     ]
                 }
             ],
             "description": [
-                "Kook de eieren. Laat ze schrikken in wat koud water, pel ze en zet opzij.",
+                "Kook de eieren. Laat ze schrikken in wat koud water, pel ze, snij ze in kleine stukjes en zet ze opzij.",
                 "Maak het deeg door alle ingredienten tot een soepel geheel te kneden. Laat het deeg rusten onder een vochtige doek terwijl je ondertussen de vulling maakt.",
                 "Week de soe-oen ongeveer 5 minuten in lauw water. Snij dit daarna fijn en zet opzij",
                 "Snij de ui fijn en bak dit  glazig in wat zonnebloemolie.  Voeg het rundergehakt toe en bak totdat het gaar is. Voeg de ketjap toe, de djinten, ketoembar en nootmuskaat.",
                 "Voeg de fijngesneden wortel, prei en doperwten toe. (handje vol)",
                 "Wanneer het geheel gaar is voeg je de fijngesneden soe-oen toe. Proef of er zout en peper bij moet. Laat de vulling afkoelen",
-                "Rol het deeg uit en steek er met een vormpje rondjes uit. Rol dit uit met een deegroller tot een dun deegflapje. Leg een volle eetlepel vulling in het midden. Leg er een stukje ei en een takje selderij op. Maak met een kwastje de rand van het deeg vochtig. Vouw het deeg dicht. Druk de rand goed aan en vouw de rand om.",
-                "Verhit in een wadjang of andere gietijzeren pan, of gewoon de frituur een flinke laag zonnebloemolie. Frituur de pasteitjes hierin totdat ze gaar zijn (het deeg krijgt een mooi krokant uiterlijk met “bubbeltjes”)"
+                "Rol het deeg uit en steek er met een vormpje rondjes uit. Rol dit uit met een deegroller tot een dun deegflapje. Leg een volle eetlepel vulling in het midden. Leg er een stukje ei en een takje koreander op. Maak met een kwastje de rand van het deeg vochtig. Vouw het deeg dicht. Druk de rand goed aan en vouw de rand om.",
+                "Verhit in een wadjang of andere gietijzeren pan, of gewoon de frituur een flinke laag zonnebloemolie. Frituur de pasteitjes hierin totdat ze gaar zijn (het deeg krijgt een mooi krokant uiterlijk met “bubbeltjes”. Laat de pasteitjes uitlekken op keukenpapier)"
             ]
         },
         {
             "name": "Sambal Hidjau",
-            "subtitle":"Een milde sambal van groene pepers",
+            "subtitle":"Groene sambal",
             "id": "8",
             "ref": "salemat_makan:6",
             "persons": 12,
@@ -376,11 +386,13 @@
                 "Meng trassi en zout in de vijzel.",
                 "Verhit de olie zacht in een wok of koekenpan, en fruit de ui een paar minuten, tot ze begint te karameliseren.",
                 "Voeg knoflook, trassi en vissaus toe. Laat een minuut pruttelen.",
-                "Voeg de pepers, het water en de tamarinde brij toe, en laat nog even staan pruttelen."
+                "Voeg de pepers, het water en de asem brij toe, en laat nog even staan pruttelen. Hoe sneller je de sambal van het vuur haalt, hoe pittiger hij is.",
+                "De sambal is in een potje in de koelkast enkele weken te bewaren"
             ]
         },
         {
             "name": "Sambal Goreng",
+            "subtitle": "Gebakken sambal",
             "id": "9",
             "ref": "salemat_makan:6",
             "persons": 8,
@@ -402,7 +414,30 @@
                 "Snij de rode pepers in de lengte door, en verwijder de zaadlijsten. Was ze uit onder de kraan, en hak ze grof. Zet ze apart.",
                 "Meng trassi en zout in de vijzel.",
                 "Verhit de olie zacht in een wok of koekenpan, en fruit de ui en knoflook een paar minuten, tot de ui begint te karameliseren.",
-                "Voeg koenjit, lomboks en trassie toe. Fruit nog even onder regelmatig roeren. Hoe langer je doorbakt, hoe milder de sambal wordt."
+                "Voeg koenjit, lomboks en trassie toe. Fruit nog even onder regelmatig roeren. Hoe langer je doorbakt, hoe milder de sambal wordt.",
+                "De sambal is in een potje in de koelkast enkele weken te bewaren"
+            ]
+        },
+        {
+            "name": "Pandan rijst",
+            "id": "10",
+            "ref": "",
+            "persons": 4 ,
+            "ingredients": [
+                {
+                    "section": "main",
+                    "contents": [
+                        {"amount":200, "unit":"gr", "ingredient": "rp"},
+                        {"amount":2, "ingredient": "blp"},
+                        {"ingredient": "zt"}
+                    ]
+                }
+            ],
+            "description": [
+                "Was de rijst. Leg een knoop in de pandan bladeren, zodat de smaak er makkelijker uitkomt.",
+                "doe de rijst in een pan, en giet er water in tot het water een vingerkootje boven de rijst uitstijgt. Voeg het zout en de pandan bladeren toe",
+                "Breng aan de kook en laat koken tot het water niet meer boven de rijst uitstijgt.",
+                "haan dan van het vuur, en zet het op een warme plek weg. Laat minstens een half uur staan."
             ]
         }
     ],
@@ -412,7 +447,7 @@
         "sections":[
             {
                 "name": "hoofdgerechten",
-                "recipes": ["0", "1", "3", "4", "7"]
+                "recipes": ["10", "0", "1", "3", "4", "7"]
             },
             {
                 "name": "bijgerechten",
