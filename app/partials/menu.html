@@ -27,7 +27,7 @@
                     <h5>Ingredienten</h5>
                     <div ng-repeat="section in recipe.ingredients">
                         <p class="section" ng-hide="section.section == 'main'">{{section.section}}</p>
-                        <p class="ingredient" ng-repeat="ingredient in section.contents">{{ingredient | readableIngredient:recipe:data}}</p>
+                        <p class="ingredient" ng-repeat="ingredient in section.contents">{{ingredient | calculateAmount | readableIngredient}}</p>
                     </div>
                 </div>
                 <div class="description col-sm-8" >

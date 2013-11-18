@@ -54,7 +54,6 @@
 .shoppinglist .ingredients .ingredient{margin: 0 0 2px 4px;}
 
 @media print{
-  /*p {font-size: 0.5em ;}*/
   body {font-size: 9pt;}
-  /*.dinner {display: none;}*/
+  .dinner .recipe .navigation {display: none;}
 }

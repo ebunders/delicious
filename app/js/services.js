@@ -54,6 +54,22 @@ angular.module('myApp.services', [])
                 return tool.find(data.ingredients, function(_i) {
                     return _i.code === code;
                 });
+            },
+
+            getUnit: function(code) {
+                return tool.find(data.units, function(_j) {
+                    return _j.code === code;
+                });
+            },
+
+            getRecipe: function(id) {
+                return tool.find(data.recipes, function(_recipe) {
+                    return _recipe.id === id;
+                });
+            },
+
+            getMenu: function(){
+                return data.menu;
             }
 
         };
@@ -143,6 +159,13 @@ angular.module('myApp.services', [])
                 }
             });
             return result;
+        };
+
+        /*
+        * Returns string 'string' when 'test' is truthy
+        */
+        tool.stringWhen = function (test, string){
+            return test ? (string ? string : test) : "";
         };
 
         return tool;

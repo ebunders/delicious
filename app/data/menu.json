@@ -11,7 +11,7 @@
         {"name": "ei", "plural": "eieren", "category":3, "code": "ei", "undevidable":true},
         {"name": "gember", "category":4, "code": "ge"},
         {"name": "goela jawa", "category":4, "code": "gj"},
-        {"name": "groene lombok", "plural": "groene lomboks", "category":1, "code": "log"},
+        {"name": "groene lombok", "plural": "groene lomboks", "category":4, "code": "log"},
         {"name": "glasnoedels", "category":4, "code": "gln"},
         {"name": "gesnipperde ui",  "category":1,"code": "gui"},
         {"name": "kemiri noot", "plural": "kemiri noten", "category":4, "code": "kn"},
@@ -47,7 +47,7 @@
         {"name": "sperciboontjes","category":1, "code": "sb"},
         {"name": "taogé", "category":1,"code": "tao"},
         {"name": "tomaten", "category":1,"code": "tom"},
-        {"name": "trassi", "category":1,"code": "tr"},
+        {"name": "trassi", "category":4,"code": "tr"},
         {"name": "ui", "plural": "uien",  "code": "ui", "category":1},
         {"name": "verse koriander", "category":3, "code": "kor"},
         {"name": "vissaus", "code": "vs", "category":4},
@@ -72,6 +72,7 @@
         {"name": "cl",  "code": "cl"},
         {"name": "kilo",  "code": "kg"},
         {"name": "gram",  "code": "gr"},
+        {"name": "blok",  "plural":"blokken", "code": "blok"},
         {"name": "mespuntje",  "code": "mp"}
     ],
     "categories":[
@@ -90,24 +91,24 @@
                 {
                     "section": "main",
                     "contents": [
-                        {"amount": 1 , "ingredient": "to"},
-                        {"amount": 0.16 , "ingredient": "sa"},
-                        {"amount": 2 , "unit": "dl", "ingredient": "wa"},
-                        {"amount": 1 , "unit": "dl", "ingredient": "zo"}
+                        {"recipe":"0", "amount": 1 , "ingredient": "to"},
+                        {"recipe":"0", "amount": 0.16 , "ingredient": "sa"},
+                        {"recipe":"0", "amount": 2 , "unit": "dl", "ingredient": "wa"},
+                        {"recipe":"0", "amount": 1 , "unit": "dl", "ingredient": "zo"}
                     ]
                 },
                 {
                     "section": "kruiden pasta",
                     "contents": [
-                        {"amount": 3 , "ingredient": "gui", "unit": "el"},
-                        {"amount": 2 , "unit": "tn", "ingredient": "kno", "modifier": "gesnipperde"},
-                        {"amount": 2 , "unit": "tl", "ingredient": "saoe"},
-                        {"amount": 5 ,  "ingredient": "kn", "modifier": "gepofte"},
-                        {"amount": 1 , "unit": "cm", "ingredient": "koe"},
-                        {"amount": 1 , "unit": "cm", "ingredient": "ge"},
-                        {"amount": 2 , "unit": "tl", "ingredient": "gj"},
-                        {"amount": 1 , "unit": "el", "ingredient": "km"},
-                        {"ingredient": "zt"}
+                        {"recipe":"0", "amount": 3 , "ingredient": "gui", "unit": "el"},
+                        {"recipe":"0", "amount": 2 , "unit": "tn", "ingredient": "kno", "modifier": "gesnipperde"},
+                        {"recipe":"0", "amount": 2 , "unit": "tl", "ingredient": "saoe"},
+                        {"recipe":"0", "amount": 5 ,  "ingredient": "kn", "modifier": "gepofte"},
+                        {"recipe":"0", "amount": 1 , "unit": "cm", "ingredient": "koe"},
+                        {"recipe":"0", "amount": 1 , "unit": "cm", "ingredient": "ge"},
+                        {"recipe":"0", "amount": 2 , "unit": "tl", "ingredient": "gj"},
+                        {"recipe":"0", "amount": 1 , "unit": "el", "ingredient": "km"},
+                        {"recipe":"0", "ingredient": "zt"}
                     ]
                 }
             ],
@@ -127,25 +128,25 @@
                 {
                     "section": "main",
                     "contents": [
-                        {"amount": 4 , "ingredient": "ei"},
-                        {"amount": 0.5 , "ingredient": "wa", "unit": "l"},
-                        {"amount": 0.16 , "ingredient": "sa"},
-                        {"amount": 2 , "ingredient": "zo", "unit": "el"},
-                        {"amount": 1,  "ingredient": "se"},
-                        {"amount": 2,  "ingredient": "sbl"},
-                        {"amount": 0.5, "note": "sap van", "ingredient": "ci"}
+                        {"recipe":"1", "amount": 4 , "ingredient": "ei"},
+                        {"recipe":"1", "amount": 0.5 , "ingredient": "wa", "unit": "l"},
+                        {"recipe":"1", "amount": 0.16 , "ingredient": "sa"},
+                        {"recipe":"1", "amount": 2 , "ingredient": "zo", "unit": "el"},
+                        {"recipe":"1", "amount": 1,  "ingredient": "se"},
+                        {"recipe":"1", "amount": 2,  "ingredient": "sbl"},
+                        {"recipe":"1", "amount": 0.5, "note": "sap van", "ingredient": "ci"}
                     ]
                 },
                 {
                     "section": "kruiden pasta",
                     "contents": [
-                        {"amount": 2 , "ingredient": "gui", "unit": "el"},
-                        {"amount": 2 , "unit": "tn", "ingredient": "kno", "modifier": "gesnipperde"},
-                        {"amount": 1 , "unit": "tl", "ingredient": "satr"},
-                        {"amount": 1, "unit": "cm", "ingredient": "la"},
-                        {"amount": 1, "unit": "tl", "ingredient": "gj"},
-                        {"amount": 1, "unit": "tl", "ingredient": "po"},
-                        {"ingredient": "zt", "note":"niet teveel, de petis is al heel zout"}
+                        {"recipe":"1", "amount": 2 , "ingredient": "gui", "unit": "el"},
+                        {"recipe":"1", "amount": 2 , "unit": "tn", "ingredient": "kno", "modifier": "gesnipperde"},
+                        {"recipe":"1", "amount": 1 , "unit": "tl", "ingredient": "satr"},
+                        {"recipe":"1", "amount": 1, "unit": "cm", "ingredient": "la"},
+                        {"recipe":"1", "amount": 1, "unit": "tl", "ingredient": "gj"},
+                        {"recipe":"1", "amount": 1, "unit": "tl", "ingredient": "po"},
+                        {"recipe":"1", "ingredient": "zt", "note":"niet teveel, de petis is al heel zout"}
 
                     ]
                 }
@@ -167,16 +168,16 @@
                 {
                     "section": "main",
                     "contents": [
-                        {"amount": 0.5 , "ingredient": "kom", "note": "ontpit en in stukken gesneden"},
-                        {"amount": 100, "unit": "gr"  , "ingredient": "tao"},
-                        {"amount": 100, "unit": "gr", "ingredient": "ko", "note": "bij voorkeur spitskool, fijn gesneden"},
-                        {"amount": 4, "unit": "el", "ingredient": "az"},
-                        {"amount": 8, "modifier":"kleine", "note": "gepeld en gehalveerd", "ingredient": "sj"},
-                        {"amount": 3, "unit":"tn", "ingredient": "kno", "note": "geperst"},
-                        {"amount": 2, "ingredient": "lor", "note": "ontpit en in reepjes gesneden"},
-                        {"amount": 2, "unit": "cm", "ingredient": "ge", "note":"fijngehakt"},
-                        {"amount": 0.5, "unit": "el", "ingredient": "gj"},
-                        {"ingredient": "zt"}
+                        {"recipe":"2", "amount": 0.5 , "ingredient": "kom", "note": "ontpit en in stukken gesneden"},
+                        {"recipe":"2", "amount": 100, "unit": "gr"  , "ingredient": "tao"},
+                        {"recipe":"2", "amount": 100, "unit": "gr", "ingredient": "ko", "note": "bij voorkeur spitskool, fijn gesneden"},
+                        {"recipe":"2", "amount": 4, "unit": "el", "ingredient": "az"},
+                        {"recipe":"2", "amount": 8, "modifier":"kleine", "note": "gepeld en gehalveerd", "ingredient": "sj"},
+                        {"recipe":"2", "amount": 3, "unit":"tn", "ingredient": "kno", "note": "geperst"},
+                        {"recipe":"2", "amount": 2, "ingredient": "lor", "note": "ontpit en in reepjes gesneden"},
+                        {"recipe":"2", "amount": 2, "unit": "cm", "ingredient": "ge", "note":"fijngehakt"},
+                        {"recipe":"2", "amount": 0.5, "unit": "el", "ingredient": "gj"},
+                        {"recipe":"2", "ingredient": "zt"}
                     ]
                 }
             ],
@@ -196,16 +197,16 @@
                 {
                     "section": "main",
                     "contents": [
-                        {"amount":800, "unit": "gr"  , "ingredient": "ki"},
-                        {"amount":4, "unit":"el", "ingredient": "kr", "note":"gewassen"},
-                        {"amount":1, "unit":"tl", "ingredient": "ma"},
-                        {"amount":4, "unit":"el", "ingredient": "zo"},
-                        {"amount":3, "ingredient": "krn"},
-                        {"amount":3, "unit":"cm", "ingredient": "pk"},
-                        {"amount":1, "unit":"dl", "ingredient": "rw"},
-                        {"amount":0.5, "ingredient": "ci", "note":"het sap van"},
-                        { "ingredient": "pz"},
-                        { "ingredient": "zt"}
+                        {"recipe":"3", "amount":800, "unit": "gr"  , "ingredient": "ki"},
+                        {"recipe":"3", "amount":4, "unit":"el", "ingredient": "kr", "note":"gewassen"},
+                        {"recipe":"3", "amount":1, "unit":"tl", "ingredient": "ma"},
+                        {"recipe":"3", "amount":4, "unit":"el", "ingredient": "zo"},
+                        {"recipe":"3", "amount":3, "ingredient": "krn"},
+                        {"recipe":"3", "amount":3, "unit":"cm", "ingredient": "pk"},
+                        {"recipe":"3", "amount":1, "unit":"dl", "ingredient": "rw"},
+                        {"recipe":"3", "amount":0.5, "ingredient": "ci", "note":"het sap van"},
+                        {"recipe":"3", "ingredient": "pz"},
+                        {"recipe":"3", "ingredient": "zt"}
                     ]
                 }
             ],
@@ -224,22 +225,22 @@
                 {
                     "section": "main",
                     "contents": [
-                        {"amount":0.3, "unit":"kg", "ingredient": "sb"},
-                        {"amount":1, "ingredient": "se"},
-                        {"amount":1, "ingredient": "sbl"},
-                        {"amount":0.16, "ingredient": "sa"},
-                        {"amount":2, "unit":"el", "ingredient": "zo"}
+                        {"recipe":"4", "amount":0.3, "unit":"kg", "ingredient": "sb"},
+                        {"recipe":"4", "amount":1, "ingredient": "se"},
+                        {"recipe":"4", "amount":1, "ingredient": "sbl"},
+                        {"recipe":"4", "amount":0.16, "ingredient": "sa"},
+                        {"recipe":"4", "amount":2, "unit":"el", "ingredient": "zo"}
                     ]
                 },
                 {
                     "section": "kruiden pasta",
                     "contents": [
-                        {"amount":3, "unit": "el", "ingredient": "gui"},
-                        {"amount":1, "unit": "tn", "ingredient": "kno", "modifier": "gesnipperde"},
-                        {"amount":1, "unit": "cm", "ingredient": "la"},
-                        {"amount":1.5, "unit": "tl", "ingredient": "satr"},
-                        {"amount":1, "unit": "tl", "ingredient": "gj"},
-                        {"ingredient": "zt"}
+                        {"recipe":"4", "amount":3, "unit": "el", "ingredient": "gui"},
+                        {"recipe":"4", "amount":1, "unit": "tn", "ingredient": "kno", "modifier": "gesnipperde"},
+                        {"recipe":"4", "amount":1, "unit": "cm", "ingredient": "la"},
+                        {"recipe":"4", "amount":1.5, "unit": "tl", "ingredient": "satr"},
+                        {"recipe":"4", "amount":1, "unit": "tl", "ingredient": "gj"},
+                        {"recipe":"4", "ingredient": "zt"}
                     ]
                 }
             ],
@@ -260,23 +261,23 @@
                 {
                     "section": "main",
                     "contents": [
-                        {"amount":0.5  , "ingredient": "blm"},
-                        {"amount":2.5, "unit":"el", "ingredient": "bl"},
-                        {"amount":1, "ingredient": "ei"},
-                        {"amount":1, "unit":"el", "ingredient": "pr", "note": "fijngehakt"},
-                        {"amount":1, "unit":"el", "ingredient": "sel", "note": "fijngehakt"},
-                        {"ingredient": "zo", "note": "om in te bakken"}
+                        {"recipe":"5", "amount":0.5  , "ingredient": "blm"},
+                        {"recipe":"5", "amount":2.5, "unit":"el", "ingredient": "bl"},
+                        {"recipe":"5", "amount":1, "ingredient": "ei"},
+                        {"recipe":"5", "amount":1, "unit":"el", "ingredient": "pr", "note": "fijngehakt"},
+                        {"recipe":"5", "amount":1, "unit":"el", "ingredient": "sel", "note": "fijngehakt"},
+                        {"recipe":"5", "ingredient": "zo", "note": "om in te bakken"}
                     ]
                 },
                 {
                     "section": "kruiden pasta",
                     "contents": [
-                        {"amount":1, "unit": "el", "ingredient": "gui"},
-                        {"amount":1, "unit": "tn", "ingredient": "kno", "note": "gesnipperd"},
-                        {"amount":2,  "ingredient": "kn", "note": "gepoft en fijn gemalen"},
-                        {"amount":1,  "ingredient": "sa", "unit":"el", "note": "gesnipperd"},
-                        {"ingredient": "zt"},
-                        {"ingredient": "pz"}
+                        {"recipe":"5", "amount":1, "unit": "el", "ingredient": "gui"},
+                        {"recipe":"5", "amount":1, "unit": "tn", "ingredient": "kno", "note": "gesnipperd"},
+                        {"recipe":"5", "amount":2,  "ingredient": "kn", "note": "gepoft en fijn gemalen"},
+                        {"recipe":"5", "amount":1,  "ingredient": "sa", "unit":"el", "note": "gesnipperd"},
+                        {"recipe":"5", "ingredient": "zt"},
+                        {"recipe":"5", "ingredient": "pz"}
                     ]
                 }
             ],
@@ -295,12 +296,12 @@
                 {
                     "section": "main",
                     "contents": [
-                        {"amount":2, "ingredient": "tom", "modifier": "grote"},
-                        {"amount":1, "unit":"tl", "ingredient": "satr"},
-                        {"amount":1, "unit":"el", "ingredient": "km"},
-                        {"amount":1, "unit": "tn", "ingredient": "kno", "note": "sap van"},
-                        {"amount":0.5, "ingredient": "ci", "note": "sap van"},
-                        {"amount":1, "unit":"tl", "ingredient": "so"}
+                        {"recipe":"6", "amount":2, "ingredient": "tom", "modifier": "grote"},
+                        {"recipe":"6", "amount":1, "unit":"tl", "ingredient": "satr"},
+                        {"recipe":"6", "amount":1, "unit":"el", "ingredient": "km"},
+                        {"recipe":"6", "amount":1, "unit": "tn", "ingredient": "kno", "note": "sap van"},
+                        {"recipe":"6", "amount":0.5, "ingredient": "ci", "note": "sap van"},
+                        {"recipe":"6", "amount":1, "unit":"tl", "ingredient": "so"}
                     ]
                 }
             ],
@@ -320,29 +321,29 @@
                 {
                     "section": "Het deeg",
                     "contents": [
-                        {"amount":500, "unit":"gr", "ingredient": "bl"},
-                        {"amount":125, "unit":"ml", "ingredient": "wa"},
-                        {"amount":1, "unit":"mp", "ingredient": "zt"},
-                        {"amount":1, "ingredient": "ei"},
-                        {"amount":1, "unit":"el", "ingredient": "zo"}
+                        {"recipe":"7", "amount":500, "unit":"gr", "ingredient": "bl"},
+                        {"recipe":"7", "amount":125, "unit":"ml", "ingredient": "wa"},
+                        {"recipe":"7", "amount":1, "unit":"mp", "ingredient": "zt"},
+                        {"recipe":"7", "amount":1, "ingredient": "ei"},
+                        {"recipe":"7", "amount":1, "unit":"el", "ingredient": "zo"}
                     ]
                 },
                 {
                     "section": "de vulling",
                     "contents": [
-                        {"amount":1, "ingredient": "ui", "modifier":"grote", "note":"fijngesneden"},
-                        {"amount":250, "unit":"gr", "ingredient": "rgh"},
-                        {"amount":100, "unit":"gr","ingredient": "gln", "note": "geweekt en fijn gesnede"},
-                        {"amount":2, "unit":"el", "ingredient": "km"},
-                        {"amount":1, "unit":"tl", "ingredient": "nm"},
-                        {"amount":100, "unit":"gr", "ingredient": "wor"},
-                        {"amount":100, "unit":"gr", "ingredient": "dop"},
-                        {"amount":2, "unit":"tl", "ingredient": "ket"},
-                        {"amount":1, "unit":"tl", "ingredient": "dji"},
-                        { "ingredient": "zt", "note":"naar smaak"},
-                        { "ingredient": "pz", "note":"naar smaak"},
-                        {"amount":3, "ingredient": "ei" },
-                        {"amount":3, "unit":"el", "ingredient": "kor"}
+                        {"recipe":"7", "amount":1, "ingredient": "ui", "modifier":"grote", "note":"fijngesneden"},
+                        {"recipe":"7", "amount":250, "unit":"gr", "ingredient": "rgh"},
+                        {"recipe":"7", "amount":100, "unit":"gr","ingredient": "gln", "note": "geweekt en fijn gesnede"},
+                        {"recipe":"7", "amount":2, "unit":"el", "ingredient": "km"},
+                        {"recipe":"7", "amount":1, "unit":"tl", "ingredient": "nm"},
+                        {"recipe":"7", "amount":100, "unit":"gr", "ingredient": "wor"},
+                        {"recipe":"7", "amount":100, "unit":"gr", "ingredient": "dop"},
+                        {"recipe":"7", "amount":2, "unit":"tl", "ingredient": "ket"},
+                        {"recipe":"7", "amount":1, "unit":"tl", "ingredient": "dji"},
+                        {"recipe":"7", "ingredient": "zt", "note":"naar smaak"},
+                        {"recipe":"7", "ingredient": "pz", "note":"naar smaak"},
+                        {"recipe":"7", "amount":3, "ingredient": "ei" },
+                        {"recipe":"7", "amount":3, "unit":"el", "ingredient": "kor"}
 
                     ]
                 }
@@ -368,15 +369,15 @@
                 {
                     "section": "main",
                     "contents": [
-                        {"amount":6, "ingredient": "log", "modifier": "lange"},
-                        {"amount":0.5, "unit":"tl", "ingredient": "tr"},
-                        {"amount":1, "ingredient": "ui", "note":"gesnipperd"},
-                        {"amount":1, "unit": "tn", "ingredient": "kno", "note": "gesnipperd"},
-                        {"amount":3, "unit":"el", "ingredient": "zo"},
-                        {"amount":15, "unit":"cl", "ingredient": "wa"},
-                        {"ingredient": "as", "note":"stukje ter grootte van een walnoot"},
-                        {"amount":0.5, "unit":"el", "ingredient": "vs"},
-                        {"amount":1, "unit":"tl", "ingredient": "zt"}
+                        {"recipe":"8", "amount":6, "ingredient": "log", "modifier": "lange"},
+                        {"recipe":"8", "amount":0.5, "unit":"tl", "ingredient": "tr"},
+                        {"recipe":"8", "amount":1, "ingredient": "ui", "note":"gesnipperd"},
+                        {"recipe":"8", "amount":1, "unit": "tn", "ingredient": "kno", "note": "gesnipperd"},
+                        {"recipe":"8", "amount":3, "unit":"el", "ingredient": "zo"},
+                        {"recipe":"8", "amount":15, "unit":"cl", "ingredient": "wa"},
+                        {"recipe":"8", "ingredient": "as", "note":"stukje ter grootte van een walnoot"},
+                        {"recipe":"8", "amount":0.5, "unit":"el", "ingredient": "vs"},
+                        {"recipe":"8", "amount":1, "unit":"tl", "ingredient": "zt"}
                     ]
                 }
             ],
@@ -400,13 +401,13 @@
                 {
                     "section": "main",
                     "contents": [
-                        {"amount":1, "unit":"tl", "ingredient": "tr"},
-                        {"amount":6,  "ingredient": "sj", "modifier":"kleine", "note":"fijngehakt"},
-                        {"amount":5, "unit": "tn", "ingredient": "kno", "note": "gesnipperd"},
-                        {"amount":1.5, "unit":"cm", "ingredient": "koe", "note": "fijngehakt"},
-                        {"amount":4,  "ingredient": "lor"},
-                        {"amount":3, "unit":"el", "ingredient": "zo"},
-                        {"amount":1, "unit":"tl", "ingredient": "zt"}
+                        {"recipe":"9", "amount":1, "unit":"tl", "ingredient": "tr"},
+                        {"recipe":"9", "amount":6,  "ingredient": "sj", "modifier":"kleine", "note":"fijngehakt"},
+                        {"recipe":"9", "amount":5, "unit": "tn", "ingredient": "kno", "note": "gesnipperd"},
+                        {"recipe":"9", "amount":1.5, "unit":"cm", "ingredient": "koe", "note": "fijngehakt"},
+                        {"recipe":"9", "amount":4,  "ingredient": "lor"},
+                        {"recipe":"9", "amount":3, "unit":"el", "ingredient": "zo"},
+                        {"recipe":"9", "amount":1, "unit":"tl", "ingredient": "zt"}
                     ]
                 }
             ],
@@ -427,9 +428,9 @@
                 {
                     "section": "main",
                     "contents": [
-                        {"amount":200, "unit":"gr", "ingredient": "rp"},
-                        {"amount":2, "ingredient": "blp"},
-                        {"ingredient": "zt"}
+                        {"recipe":"10", "amount":200, "unit":"gr", "ingredient": "rp"},
+                        {"recipe":"10", "amount":2, "ingredient": "blp"},
+                        {"recipe":"10", "ingredient": "zt"}
                     ]
                 }
             ],

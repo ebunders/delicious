@@ -14,8 +14,8 @@ angular.module('myApp.controllers', [])
 ])
 
 
-.controller("ShoppingListController", ["$scope", "$log", 'MenuDataLoader', 'Tool',
-    function($scope, $log, dataLoader, tool) {
+.controller("ShoppingListController", ["$scope", "$log", 'MenuDataLoader', 'Tool', '$filter',
+    function($scope, $log, dataLoader, tool, $filter) {
         "use strict";
 
         $log.info("ShoppingListController");
@@ -34,8 +34,8 @@ angular.module('myApp.controllers', [])
                 var ingredient = dataLoader.getIngredient(ingredientRef.ingredient),
                     result = {};
                 result.unit = ingredientRef.unit ? ingredientRef.unit : (ingredient.unit ? ingredient.unit : "");
-                result.amount = ingredientRef.amount;
-                result.name = (ingredientRef.amount > 1 && ingredient.plural) ? ingredient.plural : ingredient.name;
+                result.amount = ingredientRef.amount ? ingredientRef.amount : '';
+                result.name = ((ingredientRef.amount && ingredientRef.amount > 1) && ingredient.plural) ? ingredient.plural : ingredient.name;
                 return result.amount + " " + result.unit + " " + result.name;
             };
 
@@ -44,7 +44,7 @@ angular.module('myApp.controllers', [])
                 tool.forEach(section.recipes, function(recipe) {
                     tool.forEach(recipe.ingredients, function(section) {
                         tool.forEach(section.contents, function(ingredientRef) {
-                            allIngredientRefs.push(ingredientRef);
+                            allIngredientRefs.push(angular.copy(ingredientRef));
                         });
                     });
                 });
@@ -53,10 +53,24 @@ angular.module('myApp.controllers', [])
             //now make this a list where each ingredient is unique, and add the amounts.
             var uniqueIngredientRefs = [];
             tool.forEach(allIngredientRefs, function(ingredientRef) {
+                ingredientRef = $filter('calculateAmount')(ingredientRef);
                 if (uniqueIngredientRefs[ingredientRef.ingredient]) {
-                    uniqueIngredientRefs[ingredientRef.ingredient].amount = uniqueIngredientRefs[ingredientRef.ingredient].amount + ingredientRef.amount;
+                    var prevAmount = uniqueIngredientRefs[ingredientRef.ingredient].amount,
+                        amountToAdd = ingredientRef.amount,
+                        newAmount;
+
+                     if(prevAmount === undefined){
+                        newAmount = amountToAdd;
+                     }else if(amountToAdd === undefined){
+                        newAmount = prevAmount;
+                     }else{
+                        newAmount = prevAmount + amountToAdd;
+                     }
+                     if(ingredientRef.ingredient === "koe") $log.info("prev:"+prevAmount+", to add:"+ amountToAdd +", newAmount:"+ newAmount);
+
+                    uniqueIngredientRefs[ingredientRef.ingredient].amount = newAmount;
                 } else {
-                    uniqueIngredientRefs[ingredientRef.ingredient] = ingredientRef;
+                    uniqueIngredientRefs[ingredientRef.ingredient] = angular.copy(ingredientRef);
                 }
             });
 
@@ -74,7 +88,9 @@ angular.module('myApp.controllers', [])
                     tool.forEach(categoryIngredients, function(ingredientRef) {
                         flatList.push({
                             "class": "ingredient",
-                            "text": createIngredientLine(ingredientRef)
+                            // "text": createIngredientLine(ingredientRef)
+                            "text": $filter('readableIngredient')(ingredientRef)
+                            // "text": $filter('readableIngredient')(ingredientRef, dataLoader.getIngredient(ingredientRef.ingredient), $scope.data)
                         });
                     });
                 }

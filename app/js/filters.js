@@ -3,65 +3,75 @@
 /*globals angular */
 angular.module('myApp.filters', [])
 
+/*
+* returns an amount (as a string) with at most two decimals, and zero decimals if the given igredientDef points to an undevidable ingredient.
+* in this case the amount is always rounded up.
+*/
+.filter("removeExcessDecimals", ['MenuDataLoader', '$filter', '$log', function(dataLoader, $filter, $log){
+    return function(ingredientRef){
+        var amount = ingredientRef.amount;
 
-.filter("readableIngredient", ['$log', '$filter', 'MenuDataLoader',
-    function($log, $filter, dataLoader) {
-    'use strict';
-        return function(ingredientRef, recipe, data) {
-            var persons = data.menu.persons;
-            var recipePersons = recipe.persons;
-            var ratio = persons / recipePersons;
+        if(angular.isNumber(amount) && amount % 1 > 0){
             var ingredient = dataLoader.getIngredient(ingredientRef.ingredient);
+            amount = ingredient.undevidable  ? $filter("number")(amount, 0) : $filter("number")(amount, 2);
+            if(amount < ingredientRef.amount) amount++; /*to make sure we always round up*/
+        }
+        if(ingredientRef.ingredient === "ei"){
+            $log.info("en dan:"+amount);
+        }
+        return amount;
+    };
+}])
 
-            var amount = ingredientRef.amount * ratio || "";
-            if(amount % 1 > 0){
-                amount = ingredient.undevidable  ? $filter("number")(amount, 0) : $filter("number")(amount, 2);
+/*
+* returns a new ingredientDef, where the amount is multiplied with the ration between the number of people on the menu
+* and the number of people on the recipe.
+*/
+.filter("calculateAmount", ['$log', 'MenuDataLoader', function($log, dataLoader){
+    return function(ingredientRef){
+        var result = angular.copy(ingredientRef);
+        if(result.amount){
+            var ratio = dataLoader.getMenu().persons / dataLoader.getRecipe(ingredientRef.recipe).persons;
+            result.amount = result.amount * ratio;
+        }
+        if(ingredientRef.ingredient === "ei"){
+            $log.info(result.amount+" eieren");
+        }
+        return result;
+    };
+
+}])
+
+
+.filter("readableIngredient", ['$log', '$filter', 'MenuDataLoader', 'Tool',
+    function($log, $filter, dataLoader, tool) {
+    'use strict';
+        return function(ingredientRef) {
+            var amount, unitName;
+
+            var ingredient = dataLoader.getIngredient(ingredientRef.ingredient);
+            if(ingredientRef.amount){
+                amount = $filter('removeExcessDecimals')(ingredientRef);
+                unitName = resolveUnitName(ingredientRef, amount);
             }
-            var unit = resolveUnit(ingredientRef, ratio, data);
-            var ingredientName = resolveIngredientName(ingredientRef, ratio, data);
+            var ingredientName = resolveIngredientName(ingredientRef, amount);
             var modifier = ingredientRef.modifier;
             var note = ingredientRef.note;
-            return  amount  + " " + unit + " " + (modifier ? modifier + " " : "") + ingredientName + (note ? " (" + note + ")" : "");
+            // return  amount  + " " + unit + " " + (modifier ? modifier + " " : "") + ingredientName + (note ? " (" + note + ")" : "");
+            return tool.stringWhen(amount, amount + " ") + tool.stringWhen(unitName, unitName + " ") + tool.stringWhen(modifier, modifier+" ") + ingredientName + tool.stringWhen(note, "("+note+")");
         };
 
-        function resolveUnit(ingredientRef, ratio, data){
-            //in some cases we use the unit of the ingredient.
-            if(!ingredientRef.unit || ingredientRef.unit === "unit"){
-                var ingredient = resolveIngredient(ingredientRef.ingredient, data);
-                if(!ingredient) $log.error("no ingredient found with code ", ingredientRef);
-                return ingredient.unit ? ingredient.unit : "";
-            }
 
-            //find the unit
-            for (var i = data.units.length - 1; i >= 0; i--) {
-                var unit = data.units[i];
-                if(unit.code === ingredientRef.unit){
-                    if((ingredientRef.amount * ratio) > 1 && unit.plural){
-                        return unit.plural;
-                    }
-                    return unit.name;
-                }
-            }
+
+        function resolveUnitName(ingredientRef, amount){
+            var unitRef = ingredientRef.unit ? ingredientRef.unit : dataLoader.getIngredient(ingredientRef.ingredient).unit;
+            var unit =  unitRef ? dataLoader.getUnit(unitRef) : undefined;
+            return unit ?  (amount > 1 && unit.plural ? unit.plural : unit.name) : undefined;
         }
 
-        function resolveIngredientName(ingredientRef, ratio, data){
-            // var ingredient = resolveIngredient(ingredientRef.ingredient, data);
+        function resolveIngredientName(ingredientRef, amount){
             var ingredient = dataLoader.getIngredient(ingredientRef.ingredient);
-            if(ingredient){
-                if((ingredientRef.amount * ratio) > 1 && ingredient.plural){
-                    return ingredient.plural;
-                }
-                return ingredient.name;
-            }
-            return "no ingredient found";
-        }
-
-        function resolveIngredient(code, data){
-            for (var i = data.ingredients.length - 1; i >= 0; i--) {
-                var ingredient = data.ingredients[i];
-                if(ingredient.code === code) return ingredient;
-            }
-            return null;
+            return amount && amount > 1 && ingredient.plural ? ingredient.plural : ingredient.name;
         }
     }
 ]);
