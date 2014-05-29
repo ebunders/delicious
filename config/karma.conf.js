@@ -14,13 +14,13 @@ module.exports = function(config){
 
     frameworks: ['jasmine'],
 
-    browsers : ['Chrome'],
+    browsers : ['Firefox'],
 
     plugins : [
             'karma-junit-reporter',
             'karma-chrome-launcher',
             'karma-firefox-launcher',
-            'karma-jasmine'       
+            'karma-jasmine'
             ],
 
     junitReporter : {
